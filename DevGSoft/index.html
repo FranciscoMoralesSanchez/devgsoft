@@ -19,23 +19,32 @@
     
         <div class="container">
 
-
+            <!-- Barra de navegación -->
+            <nav class="nav">
+                <!-- Logo -->
+                <div class="nav__logo">
+                    <img src="recursos/letrasLogo.png" alt="Logotipo" style="height: 50px;">
+                </div>
         
-            <nav class="nav" style="background-color: #ffffff; width: 100%; padding: 6px 0; position: fixed; top: 0; left: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
-                <img src="recursos/logoSG.png" alt="Logotipo" style="height: 50px; position: absolute; left: 40px; top: 8px;"> <!-- Logotipo en la parte izquierda -->
-                <img src="recursos/letrasLogo.png" alt="Logotipo" style="height: 50px; position: absolute; left: 95px; top: 8px;"> <!-- Logotipo en la parte izquierda -->
-                <a class="nav__items nav__items--footer" href="">Inicio</a>
-                <a href="#" class="nav__items nav__items--cta">Contáctanos ahora</a>
-                <a href="#sobreMi" class="nav__items">Sobre Nosotros</a>
-                <a href="#nuestros_servicios" class="nav__items nav__items--footer">Servicios</a>
-                <a href="#sobre_softG" class="nav__items">Acerca de SoftG</a>
+                <!-- Botón de menú hamburguesa -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        
+                <!-- Enlaces del menú -->
+                <div class="nav__links" id="nav-links">
+                    <a class="nav__items nav__items--footer" href="">Inicio</a>
+                    <a href="#" class="nav__items nav__items--cta">Contáctanos ahora</a>
+                    <a href="#sobreMi" class="nav__items">Sobre Nosotros</a>
+                    <a href="#nuestros_servicios" class="nav__items nav__items--footer">Servicios</a>
+                    <a href="#sobre_softG" class="nav__items">Acerca de SoftG</a>
+                </div>
             </nav>
-            <!-- ---------------------------- <img src="./images/close.svg" class="nav__close">
-
-                <div class="nav__menu">
-                <img src="./recursos/menu.svg" class="nav__img">
-                </div>SECCION DE bienvenida!-->
-            <section class="hero__container" id="sobreMi" style="margin-top: 60px;">
+        
+            <!-- Hero Section -->
+            <section class="hero__container" id="sobreMi" style="margin-top: 80px;">
                 <div class="hero_texts">
                     <h1 class="hero__title">Bienvenido a DevGsoft</h1>
                     <h4 class="hero__subtitle">Nos especializamos en el desarrollo de software a medida para el control de inventarios
@@ -46,6 +55,7 @@
             </section>
         
         </div>
+        
         
         <div class="hero__wave" style="overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -427,6 +437,7 @@
         <script src="./js/questions.js"></script>
         <!-- Añadir el script de JavaScript al final del cuerpo -->
         <script src="./js/scriptForm.js"></script>
-</body>
+        <script src="./js/menu.js"></script>
+    </body>
 
 </html
