@@ -1,0 +1,980 @@
+/*@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Inter:wght@300;500&family=Raleway:wght@300;400;700&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');*/
+
+
+
+:root{
+  --background: linear-gradient(150deg, #0004d6a1 20%, #ffffff7e 100% );
+  --color-primary: #0107FA;/*color de las letras o encabezados*/
+  --color-secondary: #010370;
+  --boton-padding: 15px 25px;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: var(--background), url('../recursos/fondoPrincipal.png');
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.hero .container{
+  padding: 0;
+}
+
+header.hero {
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#sobreMi{
+  scroll-margin-top: -485px;/*barra de navehgacion sobre DevGsoft*/
+}
+
+#productos{
+  scroll-margin-top: 300px;/*hace scroll asta productos*/
+}
+
+#nuestros_servicios{
+  scroll-margin-top: -470px;/*barra de navegacion sobre servicios*/
+}
+
+#sobre_softG{
+  scroll-margin-top: -340px;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px 0;
+  max-width: 1200px;
+}
+
+
+.subtitle{
+  color: var(--color-primary);
+  font-size: 2.25rem;
+  margin-bottom: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.subtitle__testimony{
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subtitle1{
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subtitle2{
+  color: #010370;
+}
+
+.about__paragraph{/*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
+  color: #010370;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;          /* Tamaño de la fuente */
+  font-weight: 400;           /* Grosor de la fuente */
+  margin: 10px 10px;             /* Espaciado arriba y abajo */
+  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;  
+}
+
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  height: 70px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.nav--footer{
+  font-weight: 300;
+  justify-content: flex-start;
+}
+
+.nav__items{
+  color: #0400FA; /*color de las letras en la barra*/
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px 15px;
+  font-weight: inherit;
+}
+
+.nav__items--cta{
+  border: 1px solid #0400ff;/*color del cuadro de contactame ahora*/
+}
+
+.nav__items--footer{
+  padding: 10px;
+}
+
+.hero__container{
+  display: flex;
+  height: calc(100vh - 10px);
+  align-items: center;
+  color: #ffffff; /*color de letras de bienvenida*/
+}
+
+.hero__texts{
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.hero__title{
+  font-size: 3.2rem;
+}
+
+.hero__subtitle {
+  font-size: 1.1rem;          /* Tamaño de la fuente */
+  font-weight: 300;           /* Grosor de la fuente */
+  margin: 15px 15px;             /* Espaciado arriba y abajo */
+  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;         /* Centrar horizontalmente */
+}
+
+.hero__subtitle2{
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+.hero_cta{
+  display: inline-block;
+  background: #fff;
+  padding: var(--boton-padding);
+  color: var(--color-primary);
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.hero__wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+/* about */
+
+.presentacion{
+  padding-top: 0;
+  text-align: center;
+}
+
+.presentation__picture{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/*.presentacion__copy{
+  width: 70%;
+  margin: 0 auto;
+}
+*/
+
+.presentacion_cta_button{
+  display: inline-block;
+  margin-top: 30px;
+  background: #27b600;
+  color: #fff;/*color del las letras del boton*/
+  text-decoration: none;
+  padding: var(--boton-padding);
+  border-radius: 40px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Desplazamiento, difuminado, color */
+}
+.about{
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+.about__img{
+  text-align: center;
+}
+
+.about__img--left{
+  text-align: left;
+}
+
+.about__picture{
+  max-width: 80%;
+}
+
+/*.about__paragraph{
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}*/
+
+/* projects */
+
+.projects{
+  background: #d6d7ff; 
+}
+
+.projects__grid{
+  display: grid;
+  height: 550px;
+  grid-template-areas:
+  "imagen1 imagen2"
+  "imagen3 imagen4";
+  gap: 10px;
+}
+
+.projectos__item{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.projects__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.projectos__item:nth-of-type(1){
+  grid-area: imagen1;
+}
+
+.projectos__item:nth-of-type(2){
+  grid-area: imagen2;
+}
+.projectos__item:nth-of-type(3){
+  grid-area: imagen3;
+}
+.projectos__item:nth-of-type(4){
+  grid-area: imagen4;
+}
+.projectos__item:nth-of-type(5){
+  grid-area: imagen5;
+}
+
+/*efecto de trancicion */
+.projects__hover{
+  position: absolute;
+  background: #283dff8c; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(100%);
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.projectos__item:hover .projects__hover{
+  transform: translateX(0%);
+}
+
+.projects_icon{
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/*----------------------------------- Footer ------------------------------*/
+
+.footer{
+  background-color: #342D87;
+}
+
+.footer__title{
+  font-weight: 300;
+  font-size: 16px;/* Tamaño de la fuente */
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;           /* Grosor de la fuente */
+
+}
+
+.footer__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff; /*vuelve mas gruesa la linea */
+  padding-bottom: 60px;
+}
+
+.footer__paragraph {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;          /* Tamaño de la fuente */
+  font-weight: 300;           /* Grosor de la fuente */
+  margin: 1px 1px;             /* Espaciado arriba y abajo */
+  max-width: 500px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.8;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: justify;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;  
+}
+
+
+/* ---------- footer__copy container ----------*/
+
+.footer__copy{
+  --padding-container: 80px 0;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;/* Establece un relleno de 30px en la parte superior */
+  padding-bottom: 30px;/* Establece un relleno de 30px en la parte inferior */
+  
+}
+
+.footer__copyright{
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;          /* Tamaño de la fuente */
+  
+}
+
+
+.footer__icons{
+  margin-bottom: 10px;
+}
+
+.footer__img{
+  width: 30px;
+}
+
+
+/* About */
+.aboutt {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subtitlee {
+  color: var(--color-primary);
+  font-size: 2.25rem;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.aboutt__paragraph {
+  color: #010370;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 10px; /* Corregí la sintaxis del margin */
+  max-width: 800px;
+  line-height: 1.4;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutt__main {
+  padding-top: 60px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap; /* Asegura que las columnas se ajusten en pantallas más pequeñas */
+}
+
+.aboutt__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea los elementos al principio */
+  align-items: center;
+  flex: 1; /* Hace que todas las columnas tengan la misma altura */
+  min-width: 260px; /* Controla el ancho mínimo de cada columna */
+  padding: 1rem;
+  background-color: #ffffff; /* Opcional, para mejorar el diseño */
+  border-radius: 10px; /* Opcional, para redondear las esquinas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185); /* Opcional, para dar un sutil sombreado */
+}
+
+.aboutt__icon {
+  width: 60px; /* Ajusta el tamaño de los íconos según lo necesites */
+  height: auto;
+}
+
+.aboutt__title {
+  color: #0400ff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 15px 0;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutt__paragraph {
+  color: #010370;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  margin: 10px 0;
+  max-width: 260px; /* Asegura que los párrafos no se estiren demasiado */
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutt__paragraph__services {
+  color: #010370;
+  font-size: 16px;          /* Tamaño de la fuente */
+  font-weight: 400;           /* Grosor de la fuente */
+  margin: 10px 10x;             /* Espaciado arriba y abajo */
+  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center ;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;         /* Centrar horizontalmente */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/*estilos para seccion info de SOFTG*/
+
+.info_softG{
+  background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
+}
+
+
+
+.knowledge {
+  background-color: #ffffff;
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  overflow: hidden;
+}
+
+.knowledge__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  align-items: center;
+}
+
+.knowledge__picture{
+  max-width: 500px;
+}
+
+.knowledge__paragraph{
+ 
+  margin-bottom: 15px;
+
+  color: #010370;
+  font-size: 16px;          /* Tamaño de la fuente */
+  font-weight: 400;           /* Grosor de la fuente */
+  margin: 10px 10px;             /* Espaciado arriba y abajo */
+  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;         /* Centrar horizontalmente */
+  font-family: 'Poppins', sans-serif;
+}
+
+.knowledge__img{
+  width: 100%;
+  display: block;
+}
+
+
+/* Testimony */
+
+.testimony{
+  background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
+}
+
+
+.testimony__container{
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 1em;
+  align-items: center;
+}
+
+.testimony__body{
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.testimony__body--show{
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.testimony__texts{
+  max-width: 700px;
+}
+
+.testimony__course{
+  background-color: var(--color-primary);/*esiste una especie de espacio para poner algun texto debajo del texto principal*/
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+
+}
+
+.testimony__arrow{
+  width: 90%;
+  cursor: pointer;
+}
+
+.testimony__review {
+  color: #010370;
+  font-size: 16px;          /* Tamaño de la fuente */
+  font-weight: 400;           /* Grosor de la fuente */
+  margin: 10px 10px;             /* Espaciado arriba y abajo */
+  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;         /* Centrar horizontalmente */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Questions */
+
+.questions{
+  text-align: center;
+}
+
+.questions__container{
+  display: grid;
+  gap: 1.5em;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.questions__padding{
+  padding: 0;
+  transition: padding .3s;
+  border: 1px solid #4545db52;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.171); /* Desplazamiento, difuminado, color */
+}
+
+.questions__padding--add{
+  padding-bottom: 30px;
+}
+
+.questions__answer{
+  padding: 0 30px 0;
+  overflow: hidden;
+}
+
+.questions__title{
+  text-align: left;
+  display: flex;
+  padding: 30px 0 30px;
+  cursor: pointer;
+  color:#010370;
+  justify-content: space-between;
+  font-size: 1.1rem;          /* Tamaño de la fuente */
+  font-family: 'Poppins', sans-serif;
+
+  
+}
+
+.questions__arrow{
+  border-radius: 50%;
+  background-color: var(--color-title);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin-left: 10px;
+  transition:  transform .3s;
+}
+
+.questions__arrow--rotate{
+  transform: rotate(180deg);
+}
+
+.questions__show{
+  text-align: left;
+  height: 0;
+  transition: height .4s;
+  color: #010370;
+  font-size: 16px;          /* Tamaño de la fuente */
+  font-weight: 400;           /* Grosor de la fuente */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+}
+
+.questions__img{
+  display: block;
+}
+
+.questions__copy{
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: #010370;
+  font-size: 16px;          /* Tamaño de la fuente */
+  font-weight: 400;           /* Grosor de la fuente */
+  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;         /* Centrar horizontalmente */
+  font-family: 'Poppins', sans-serif;
+}
+
+.questions__paragraph{
+  color: #010370;
+  font-size: 1.1rem;          /* Tamaño de la fuente */
+  font-weight: 400;           /* Grosor de la fuente */
+  margin: 15px 10;             /* Espaciado arriba y abajo */
+  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.2;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;         /* Centrar horizontalmente */
+  font-family: 'Poppins', sans-serif;
+}
+
+.subtitle_llamado_a_la_accion{
+  color: var(--color-primary);
+  font-size: 2rem;          /* Tamaño de la fuente */
+  font-weight: 600;           /* Grosor de la fuente */
+  margin: 25px 15px;             /* Espaciado arriba y abajo */
+  max-width: 1000px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto;          /* Centrar horizontalmente */
+  margin-right: auto;         /* Centrar horizontalmente */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.footer__title, .footer__newsletter{
+  color: #fff;
+}
+
+/* ------------------------------------------ Estilos para el contenedor del icono de WhatsApp */
+
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #27ad01;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-decoration: none; /* Evita subrayados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* Ajuste el tamaño del contenedor */
+  height: 70px; /* Ajuste el tamaño del contenedor */
+}
+
+/* Eliminar borde de enfoque al hacer clic */
+#whatsapp-icon:focus {
+  outline: none;  /* Elimina el borde de enfoque */
+  border: none;   /* Elimina cualquier borde */
+}
+
+/* Estilos para el icono de WhatsApp dentro del contenedor */
+#whatsapp-icon i {
+  font-size: 36px; /* Tamaño ajustado del icono */
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+/* El pequeño punto rojo estático en la parte superior */
+#whatsapp-icon::after {
+  content: '';
+  position: absolute;
+  top: -6px; /* Coloca el punto un poco más arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px; /* Tamaño del punto rojo */
+  height: 12px; /* Tamaño del punto rojo */
+  background-color: red; /* Color rojo */
+  border-radius: 50%; /* Hace que el punto sea redondo */
+  /* Eliminamos la animación de pulsar, ya no se moverá */
+}
+
+/* Pseudo-elemento para las ondas */
+#whatsapp-icon::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Coloca las ondas un poco arriba del punto */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px; /* Tamaño inicial de la onda */
+  height: 20px; /* Tamaño inicial de la onda */
+  background-color: rgba(255, 0, 0, 0.3); /* Rojo translúcido */
+  border-radius: 50%;
+  opacity: 0; /* Comienza invisible */
+  animation: ondas 1s infinite ease-out; /* Animación de ondas */
+}
+
+/* Animación de expansión de las ondas */
+@keyframes ondas {
+  0% {
+    transform: translateX(-50%) scale(1); /* Tamaño inicial de la onda */
+    opacity: 0.5; /* Opacidad inicial */
+  }
+  50% {
+    transform: translateX(-50%) scale(2.5); /* La onda se expande */
+    opacity: 0.2; /* La onda se desvanece a medida que crece */
+  }
+  100% {
+    transform: translateX(-50%) scale(3); /* La onda se sigue expandiendo */
+    opacity: 0; /* Desaparece completamente */
+  }
+}
+
+/*----------- icons de contacto dentro del footer parte inferior ------------ */
+.footer__contact-icons {
+  margin-top: 22px;
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer__icon-link {
+  color: #ffffff; /* Color de los íconos */
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__icon-link i {
+  font-size: 20px; /* Tamaño de los íconos */
+}
+
+.footer__icon-link:hover {
+  color: #007BFF; /* Color al pasar el mouse */
+}
+
+/* ----------------------------------------------------------------------------Estilo para el botón */
+.contact-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Estilo para el título del formulario */
+.contact-form h2 {
+  color: var(--color-secondary); /* El color de tu esquema principal (azul vibrante) */
+}
+
+/* Estilo para las etiquetas del formulario */
+.contact-form label {
+  color: var(--color-secondary); /* Un tono más oscuro de azul para las etiquetas */
+  font-size: 16px; /* Opcional: ajustar el tamaño de la fuente */
+  font-weight: bold; /* Opcional: hacer las etiquetas más visibles */
+}
+
+/* Estilo para los campos de entrada (input y textarea) */
+.contact-form input,
+.contact-form textarea {
+    color: #09003b; /* Un color oscuro para el texto (gris oscuro) */
+}
+
+/* Estilo para el formulario flotante */
+.contact-form-container {
+  font-family: 'Poppins', sans-serif;
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  z-index: 999; /* Aparece sobre otros elementos */
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: #ffffffad; /*le agrega color al formulario*/
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #656ff0;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+/* Cambiar el color del texto del placeholder en todos los campos del formulario */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #0105fa70; /* Color que quieres para el placeholder */
+    font-style: italic; /* Opcional: poner el texto en cursiva */
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #25aa00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  
+}
+
+.contact-form button:hover {
+  background-color: #35d608;
+}
+
+/* Estilo para el botón "Cerrar" */
+#closeForm {
+  background-color: #DC3700;
+  
+}
+
+#closeForm:hover {
+  background-color: #ff4000;
+}
+/*-------fin formulario*/
+
+
+/*-----------------------------------------------------------------------------------------------------------Media queries------------------*/
+
+
+/* Estilos para dispositivos con un ancho de pantalla máximo de 600px */
+@media (max-width: 600px) {
+   
+  
+  .nav{
+    justify-content: space-around;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__items--cta{
+    border: none;
+
+  }
+
+  .nav__items{
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    margin-right: 0;
+  }
+
+  .nav__items--footer{
+    border: none;
+  }
+
+  /*Hero*/
+
+  .hero__container {
+    padding: 20px; /* Reducimos el padding en pantallas pequeñas */
+    margin-top: 20px; /* Menos margen superior */
+}
+
+.hero__title {
+    font-size: 2rem; /* Reducimos el tamaño del título */
+    margin-bottom: 15px;
+}
+
+.hero__subtitle {
+    font-size: 1rem; /* Reducimos el tamaño del subtítulo */
+    line-height: 1.4; /* Ajustamos el interlineado */
+}
+
+.presentacion_cta_button {
+    width: 100%; /* Hacemos que el botón ocupe el 100% del ancho */
+    padding: 14px;
+    font-size: 1.1rem; /* Ajustamos el tamaño de la fuente */
+}
+}
+
+
+

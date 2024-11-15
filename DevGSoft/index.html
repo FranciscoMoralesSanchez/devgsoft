@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>DevGSoft</title>
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/estilos.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+ <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="hero">
+    
+        <div class="container">
+
+
+        
+            <nav class="nav" style="background-color: #ffffff; width: 100%; padding: 6px 0; position: fixed; top: 0; left: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                <img src="recursos/logoSG.png" alt="Logotipo" style="height: 50px; position: absolute; left: 40px; top: 8px;"> <!-- Logotipo en la parte izquierda -->
+                <img src="recursos/letrasLogo.png" alt="Logotipo" style="height: 50px; position: absolute; left: 95px; top: 8px;"> <!-- Logotipo en la parte izquierda -->
+                <a class="nav__items nav__items--footer" href="">Inicio</a>
+                <a href="#" class="nav__items nav__items--cta">Contáctanos ahora</a>
+                <a href="#sobreMi" class="nav__items">Sobre Nosotros</a>
+                <a href="#nuestros_servicios" class="nav__items nav__items--footer">Servicios</a>
+                <a href="#sobre_softG" class="nav__items">Acerca de SoftG</a>
+            </nav>
+            <!-- ---------------------------- <img src="./images/close.svg" class="nav__close">
+
+                <div class="nav__menu">
+                <img src="./recursos/menu.svg" class="nav__img">
+                </div>SECCION DE bienvenida!-->
+            <section class="hero__container" id="sobreMi" style="margin-top: 60px;">
+                <div class="hero_texts">
+                    <h1 class="hero__title">Bienvenido a DevGsoft</h1>
+                    <h4 class="hero__subtitle">Nos especializamos en el desarrollo de software a medida para el control de inventarios
+                    y la gestión empresarial, optimizando ventas, inventarios y pagos, con implementación y 
+                    soporte continuo para garantizar tu éxito.</h4>
+                    <a href="https://wa.me/50512345678?text=Hola%2C%20%C2%BFme%20pueden%20proporcionar%20m%C3%A1s%20detalles%20sobre%20sus%20servicios%3F%20%C2%A1Gracias%21" class="presentacion_cta_button" target="_blank">Contáctanos ahora</a>
+                </div>
+            </section>
+        
+        </div>
+        
+        <div class="hero__wave" style="overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 351.53,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+      <!-- WhatsApp Icono flotante -->
+
+        <a href="https://wa.me/50512345678?text=Hola%2C%20%C2%BFme%20pueden%20proporcionar%20m%C3%A1s%20detalles%20sobre%20sus%20servicios%3F%20%C2%A1Gracias%21" target="_blank" id="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </header>
+
+  <main>
+    <!-- ---------------------------- SECCION SOBRE NOSOSTROS!-->
+    <section class="about container" id="nuestros_servicios">
+      <figure class="about__img about__img--left">
+        <img src="recursos/hombreTrabajando.jpg" class="about__picture">
+      </figure>
+
+      <div class="about__texts" id="sobreMiTrabajo">
+        <h2 class="subtitle">Sobre DevGsoft</h2>
+        <p class="about__paragraph">En DevGsoft, nos especializamos en el desarrollo de software a medida, 
+          con el propósito de transformar la forma en que las pequeñas y medianas empresas gestionan sus operaciones. 
+          Ofrecemos soluciones integrales, confiables, innovadoras y de calidad, adaptadas a las necesidades únicas de cada negocio.<br>
+
+          <br>Facilitamos que nuestros clientes tomen decisiones informadas, basadas en datos. Sabemos que cada empresa 
+          es diferente, por eso brindamos un enfoque personalizado que no solo optimiza procesos, s
+          ino que también impulsa el crecimiento y la competitividad.<br>
+
+          <br>Además, nos dedicamos a la distribución de software de alto rendimiento, 
+          como SoftG, un software (POS) de control de inventario y facturación, 
+          ideal para negocios que necesitan una solución de ventas rápida, confiable y fácil de usar.
+       </p>
+
+      </div>
+       
+    </section>
+ <!-- ---------------------------- SECCION DE SERVICIOS---------------------------->
+    
+ <section class="container aboutt">
+    <h2 class="subtitlee">Nuestros Servicios</h2>
+    <p class="aboutt__paragraph__services">En DevGSoft, ofrecemos soluciones personalizadas para optimizar
+         tu negocio. Nos especializamos en tres áreas principales:</p>
+
+    <div class="aboutt__main" id="sobre_softG">
+        <article class="aboutt__icons">
+            <img src="./recursos/programacion.png" class="aboutt__icon">
+            <h3 class="aboutt__title">Desarrollo de Sistemas ERP</h3>
+            <p class="aboutt__paragraph">Desarrollamos sistemas ERP a medida para integrar y optimizar todos
+                 los procesos de tu empresa, desde ventas hasta inventarios, mejorando la eficiencia y facilitando 
+                 la toma de decisiones basadas en datos.</p>
+        </article>
+
+        <article class="aboutt__icons">
+            <img src="./recursos/backend.png" class="aboutt__icon">
+            <h3 class="aboutt__title">Desarrollo de Sistemas POS</h3>
+            <p class="aboutt__paragraph">Además de SoftG, nuestro sistema POS para control de inventarios y 
+                facturación, también diseñamos soluciones POS personalizadas que se adaptan a las necesidades 
+                específicas de tu negocio.</p>
+        </article>
+
+        <article class="aboutt__icons">
+            <img src="./recursos/web.png" class="aboutt__icon">
+            <h3 class="aboutt__title">Desarrollo de Páginas Web</h3>
+            <p class="aboutt__paragraph">Creamos páginas web modernas, adaptativas y optimizadas para SEO, 
+                fortaleciendo tu presencia digital, incrementando la visibilidad de tu marca y asegurando
+                 una experiencia de usuario ágil y eficiente.</p>
+        </article>
+    </div>
+ </section>
+
+ <!-- ---------------------------- SECCION DE PRODUCTOS---------------------------->
+    <section class="info_softG">
+     <section class="about container">
+
+      <figure class="about__img about__img--left">
+        <img src="recursos/SoftG.png" class="about__picture">
+      </figure>
+      
+        <div class="about__texts" id="">
+          <h2 class="subtitle">SoftG: La solución integral para tu negocio</h2>
+          <p class="about__paragraph">SoftG es nuestro software POS avanzado, 
+            diseñado para llevar tu negocio al siguiente nivel. Combina lo mejor de 
+            un sistema de punto de venta tradicional con poderosas funcionalidades de 
+            gestión empresarial, como control de inventarios, ventas, compras y más.<br>
+
+            <br>Ideal para negocios que buscan no solo una solución de ventas rápida y confiable, 
+            sino también una herramienta completa para gestionar todos los aspectos clave de su operación. 
+            SoftG es flexible, fácil de usar y se adapta a las necesidades de tu negocio, 
+            brindándote control total sobre cada transacción y cada proceso.
+           </p>
+        </div>
+
+     </section> 
+    </section> 
+
+ <!-- ---------------------------- SECCION DE PRODUCTOS---------------------------->
+    <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Con SoftG, optimizas tus operaciones y tomas decisiones basadas 
+                        en datos.</h2>
+                    <p class="knowledge__paragraph">El sistema incluye módulos esenciales como Usuarios, Productos, Proveedores,y Clientes, 
+                        que facilita la gestión de la información y el seguimiento de tus contactos. Además, 
+                        SoftG cuenta con módulos de Compras y Ventas, que te permiten registrar 
+                        y monitorear todas las operaciones comerciales, Reportes detallados para tomar decisiones informadas, 
+                        y un sistema de Respaldo de Base de Datos para asegurar la protección de tu información en todo momento.</p>
+                      <a href="https://wa.me/50512345678?text=Hola,%20me%20gustaria%20más%20información%20sobre%20SoftG.%20¡Gracias!" class="presentacion_cta_button" target="_blank">Contáctanos ahora</a>
+                      
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./recursos/laptopSoftG.png" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+        <!-- SLIDER SECCION DE TESTIMMONIO!-->
+        <section class="testimony">
+          <div class="testimony__container container">
+              <img src="./recursos/leftarrow.svg" class="testimony__arrow" id="before">
+
+              <section class="testimony__body testimony__body--show" data-id="1">
+                  <div class="testimony__texts">
+                      <h2 class="subtitle__testimony">Tienda Jireh's Store<br> <span class="testimony__course">
+                        Francisco Morales</span></h2>
+                      <p class="testimony__review">"SoftG es un software seguro e intuitivo que nos ha permitido
+                         gestionar de manera eficiente todas nuestras compras y ventas, optimizando la toma de 
+                         decisiones y, como resultado, mejorando el rendimiento y la eficiencia de nuestra tienda."</p>
+                  </div>
+
+                  <figure class="testimony__picture">
+                      <img src="./recursos/logoTiendaJirehs.jpg" class="testimony__img">
+                  </figure>
+              </section>
+
+              <section class="testimony__body" data-id="2">
+                  <div class="testimony__texts">
+                    <h2 class="subtitle__testimony">Tienda Jireh's Store<br> <span class="testimony__course">
+                        Francisco Morales</span></h2>
+                      <p class="testimony__review">"SoftG es un software seguro e intuitivo que nos ha permitido
+                         gestionar de manera eficiente todas nuestras compras y ventas, optimizando la toma de 
+                         decisiones y, como resultado, mejorando el rendimiento y la eficiencia de nuestra tienda."</p>
+                  </div>
+
+                  <figure class="testimony__picture">
+                      <img src="./recursos/fondoPrincipal.png" class="testimony__img">
+                  </figure>
+              </section>
+
+              <section class="testimony__body" data-id="3">
+                  <div class="testimony__texts">
+                    <h2 class="subtitle__testimony">Tienda Jireh's Store<br> <span class="testimony__course">
+                        Francisco Morales</span></h2>
+                      <p class="testimony__review">"SoftG es un software seguro e intuitivo que nos ha permitido
+                         gestionar de manera eficiente todas nuestras compras y ventas, optimizando la toma de 
+                         decisiones y, como resultado, mejorando el rendimiento y la eficiencia de nuestra tienda."</p>
+                  </div>
+
+                  <figure class="testimony__picture">
+                      <img src="./recursos/hombreTrabajando.jpg" class="testimony__img">
+                  </figure>
+              </section>
+
+              <section class="testimony__body" data-id="4">
+                  <div class="testimony__texts">
+                    <h2 class="subtitle__testimony">Tienda Jireh's Store<br> <span class="testimony__course">
+                        Francisco Morales</span></h2>
+                      <p class="testimony__review">"SoftG es un software seguro e intuitivo que nos ha permitido
+                         gestionar de manera eficiente todas nuestras compras y ventas, optimizando la toma de 
+                         decisiones y, como resultado, mejorando el rendimiento y la eficiencia de nuestra tienda."</p>
+                  </div>
+
+                  <figure class="testimony__picture">
+                      <img src="./recursos/fondoPrincipal2.jpg" class="testimony__img">
+                  </figure>
+              </section>
+
+
+              <img src="./recursos/rightarrow.svg" class="testimony__arrow" id="next">
+          </div>
+      </section>
+ <!-- ---------------------------- SECCION DE PREGUNTAS!-->
+      <section class="questions container">
+        <h2 class="subtitle">Preguntas frecuentes</h2>
+        <!--<p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
+            doloribus neque perspiciatis sapiente fuga.</p>!-->
+
+        <section class="questions__container">
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué servicios ofrece DevGsoft?
+                        <span class="questions__arrow">
+                            <img src="./recursos/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">En DevGsoft, nos especializamos en el desarrollo y distribución 
+                         de software personalizado para pequeñas y medianas empresas (PYMES), brindando soluciones 
+                         tecnológicas que optimizan sus operaciones y mejoran su eficiencia. Nos enfocamos en crear
+                         sistemas a medida que se adaptan a las necesidades específicas de cada negocio, además de 
+                         ofrecer productos de software de alta calidad como SoftG, nuestro sistema POS avanzado. 
+                         Nuestros servicios principales incluyen: Desarrollo de sistemas ERP personalizados, 
+                         desarrollo de sistemas POS (Punto de Venta), desarrollo de páginas web, 
+                         distribución de software (como SoftG), y consultoría y asesoría tecnológica.
+                    </p>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué es un sistema ERP y cómo puede beneficiar a mi PYME?
+                        <span class="questions__arrow">
+                            <img src="./recursos/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Un sistema ERP (Enterprise Resource Planning) es un 
+                        software integral que permite gestionar y automatizar las principales funciones 
+                        de tu empresa, como ventas, compras, inventarios, contabilidad, recursos humanos 
+                        y más, en una única plataforma. Al centralizar toda la información en tiempo real, 
+                        un ERP mejora la eficiencia operativa, reduce errores manuales, optimiza la toma de
+                        decisiones y permite un crecimiento más controlado y escalable.</p>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué es un sistema POS y cómo beneficia a mi PYME?
+                        <span class="questions__arrow">
+                            <img src="./recursos/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Un sistema POS (Punto de Venta) es un software utilizado 
+                        para gestionar el proceso de venta en comercios, tiendas o restaurantes. 
+                        Permite registrar ventas, controlar inventarios, generar facturas, 
+                        y realizar pagos de manera rápida y eficiente. Además, puede integrarse con otros 
+                        sistemas como el ERP para tener un control total de las operaciones comerciales, 
+                        desde la venta hasta la contabilidad.
+                    </p>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Mi PYME necesita un sistema POS o un ERP?
+                        <span class="questions__arrow">
+                            <img src="./recursos/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Si tu empresa realiza ventas directas, como una tienda o restaurante, 
+                        un sistema POS es una herramienta esencial para gestionar las transacciones de manera eficiente. 
+                        Sin embargo, si además necesitas gestionar otros procesos como inventarios, compras, ventas, 
+                        contabilidad y recursos humanos de manera integrada, un sistema ERP es más adecuado.<br>
+
+                        <br>En DevGsoft, diseñamos y desarrollamos soluciones ERP personalizadas para pequeñas y medianas empresas (PYMES), 
+                        adaptadas a tus necesidades específicas, asegurando que todos los procesos de tu 
+                        empresa estén centralizados y automatizados. Esto no solo mejora la eficiencia 
+                        operativa, sino que también permite un flujo de información sin interrupciones 
+                        entre todas las áreas de tu negocio.</p>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué es SoftG y cómo puede beneficiar a mi negocio?
+                        <span class="questions__arrow">
+                            <img src="./recursos/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">SoftG es un sistema POS avanzado diseñado para pequeñas 
+                        y medianas empresas (PYMES). No solo facilita el procesamiento de ventas, 
+                        sino que también integra funciones clave de gestión empresarial, como control de inventarios, 
+                        gestión de compras, ventas, y seguimiento de proveedores y clientes.<br>
+                    
+                        <br>Implementando SoftG en tu PYME, podrás automatizar procesos, reducir errores y tomar decisiones
+                        informadas gracias a sus reportes detallados. Su interfaz intuitiva facilita su uso, incluso 
+                        sin experiencia técnica, mientras que el respaldo de base de datos asegura la protección 
+                        de tu información.<br>
+
+                        <br>En resumen, SoftG optimiza la gestión operativa de tu negocio, brindándote control total 
+                        sobre tus transacciones y procesos comerciales, mejorando la eficiencia y permitiéndote 
+                        crecer de manera más organizada y escalable.
+                    </p>
+
+                </div>
+            </article>
+        </section>
+
+        <section class="questions__offer">
+            <h2 class="subtitle_llamado_a_la_accion">¿Estás buscando un software a medida que impulse la eficiencia y el crecimiento de tu negocio?</h2>
+            <p class="questions__copy">Contáctanos y descubre cómo nuestras soluciones personalizadas pueden mejorar la eficiencia operativa, 
+                automatizar procesos clave y potenciar la toma de decisiones estratégicas para el crecimiento de tu negocio.</p>
+                <a href="https://wa.me/50512345678?text=Hola%2C%20%C2%BFme%20pueden%20proporcionar%20m%C3%A1s%20detalles%20sobre%20sus%20servicios%3F%20%C2%A1Gracias%21" class="presentacion_cta_button" target="_blank">Contáctanos ahora</a>
+        </section>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <section class="footer__container container">
+        <div class="div div--footer">
+            <h2 class="footer__title">¿Deseas más información?</h2>
+            <p class="footer__paragraph">Si necesitas más detalles 
+                sobre nuestros servicios o productos, no dudes en ponerte en contacto 
+                con nosotros. Estaremos encantados de proporcionarte la información que 
+                necesitas y resolver cualquier duda que puedas tener. 
+                Será un placer asistirte y brindarte la atención que mereces.</p>
+            <br>
+            
+            <p class="footer__paragraph">Contáctenos:</p>
+            
+            <div class="footer__contact-icons">
+                <a href="mailto:contacto@tusitio.com" class="footer__icon-link">
+                    <i class="fas fa-envelope"></i> informacion@devgsoft.com
+                </a>
+            </div>
+            <div class="footer__contact-icons">
+                <a href="tel:+1234567890" class="footer__icon-link">
+                    <i class="fas fa-phone-alt"></i> +505 57134663
+                </a>
+                
+            </div>
+            
+        </div>
+
+        <div class="div div--footer">
+            <h2 class="footer__title">Nuestra Cultura</h2>
+            <p class="footer__paragraph">• <strong>Misión</strong>: Nuestra misión es proporcionar soluciones de software 
+                innovadoras y personalizadas para ayudar a las pequeñas y medianas empresas (PYMEs) 
+                a optimizar sus procesos administrativos y alcanzar sus metas de negocio</p>
+            <br>
+            <p class="footer__paragraph">• <strong>Visión</strong>: Aspiramos a ser el socio estratégico clave para las PYMEs, 
+                ayudándolas a digitalizarse y mejorar su eficiencia mediante soluciones tecnológicas 
+                confiables e innovadoras.</p>
+            <br>
+            <p class="footer__paragraph">• <strong>Valores</strong>: Nuestros valores son la Innovación, Compromiso, Calidad y Colaboración.</p>
+            
+        </div>
+        
+    </section>
+
+    <section class="footer__copy container">
+        <div class="footer__social">
+            <a href="https://www.instagram.com/" class="footer__icons" target="_blank"><img src="./recursos/instagram.png" class="footer__img"></a>
+            <a href="https://es-la.facebook.com/" class="footer__icons" target="_blank"><img src="./recursos/facebook.png" class="footer__img"></a>
+            <a href="https://www.tiktok.com/es/" class="footer__icons" target="_blank"><img src="./recursos/tik-tok.png" class="footer__img"></a>
+        </div>
+
+        <h3 class="footer__copyright">Copyright © 2024 DevGsoft. Todos los derechos reservados.</h3>
+    </section>
+ </footer>
+        <!-- Formulario flotante -->
+        <div id="contactForm" class="contact-form-container">
+            <form action="https://formspree.io/f/mqakbgvk" method="POST" class="contact-form">
+                <h2>Formulario de Contacto</h2>
+        
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="_replyto" placeholder="Tu correo electrónico" required>
+        
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+        
+                <button type="submit">Enviar</button>
+                <button type="button" id="closeForm">Cerrar</button>
+            </form>
+        </div>
+
+   
+        <script src="https://kit.fontawesome.com/7460d307cd.js" crossorigin="anonymous"></script>
+        <script src="./js/slider.js"></script>
+        <script src="./js/questions.js"></script>
+        <!-- Añadir el script de JavaScript al final del cuerpo -->
+        <script src="./js/scriptForm.js"></script>
+</body>
+
+</html
