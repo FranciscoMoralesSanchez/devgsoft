@@ -1845,6 +1845,98 @@ html{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
+  /* ----- SECCION SOBRE NOSOSTROS ------*/
+
+  .about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .about__img--left{
+    text-align: center;
+
+  }
+  
+  .about__picture{
+    max-width: 100%;
+  }
+
+  .subtitle{
+    color: var(--color-primary);
+    font-size: 2.25rem;
+    margin-bottom: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .about__paragraph{/*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
+    color: #010370;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;          /* Tamaño de la fuente */
+    font-weight: 400;           /* Grosor de la fuente */
+    margin: 10px 10px;             /* Espaciado arriba y abajo */
+    max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+    line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+    text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+    margin-left: auto;          /* Centrar horizontalmente */
+    margin-right: auto;  
+  }
+
+  /*seccion CON SOFTG*/
+
+  
+  .knowledge__container{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 3em;
+    text-align: center;
+  }
+
+  .knowledge__picture{
+    grid-row: 1/2;
+    justify-self: center;
+  }
+  
+  
+  .knowledge__paragraph{
+    text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  }
+
+   /*seccion TESTIMONIO*/
+
+   
+   .knowledge__picture{
+      grid-row: 1/2;
+      justify-self: center;
+    }
+
+    .testimony__container{
+      grid-template-columns: 30px 1fr 30px;
+    }
+
+    .testimony__body{
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content max-content;
+      gap: 3em;
+      justify-items:center ;
+    }
+
+
+  .testimony__img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .subtitle__testimony{
+    font-size: 1.8rem;
+  }
+  
+
 }
 
 
