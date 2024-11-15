@@ -1935,6 +1935,30 @@ html{
   .subtitle__testimony{
     font-size: 1.8rem;
   }
+  /*seccion de PREGUNTAS*/
+
+  .questions__container {
+    background-color: #ffffff;
+    padding-bottom: 60px;
+  }
+
+  .questions__copy{
+      width: 100%;
+  }
+  
+  .subtitle_llamado_a_la_accion{
+    font-size: 1.7rem;          /* Tamaño de la fuente */
+
+  }
+  
+  .footer__container{
+    flex-wrap: wrap;
+  }
+  
+  .footer__title{
+    margin-top: 70px;
+  }
+  
   
 
 }
