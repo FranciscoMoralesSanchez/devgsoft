@@ -1882,6 +1882,17 @@ html {
     line-height: 1.8; /* Espaciado entre líneas para mejorar la legibilidad */
     text-align: justify; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
   }
+
+  /*VERIFICAR QUE ESTE CODIGO ELIMINE EL RECUADRO AZUL CAUNDO ESTA EN UNA TABLE LA PAGINA*/
+  /* Aplica este estilo solo en dispositivos móviles */
+  @media (max-width: 768px) {
+    button:focus,
+    a:focus,
+    input:focus {
+      outline: none; /* Elimina el borde de enfoque */
+      box-shadow: none; /* Elimina el efecto de sombra si lo tiene */
+    }
+  }
 }
 
 @media (min-width: 801px) and (max-width: 1050px) {
