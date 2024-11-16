@@ -1,19 +1,17 @@
 /*@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Inter:wght@300;500&family=Raleway:wght@300;400;700&display=swap');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');*/
 
-
-
-:root{
-  --background: linear-gradient(150deg, #0004d6a1 20%, #ffffff7e 100% );
-  --color-primary: #0107FA;/*color de las letras o encabezados*/
+:root {
+  --background: linear-gradient(150deg, #0004d6a1 20%, #ffffff7e 100%);
+  --color-primary: #0107fa; /*color de las letras o encabezados*/
   --color-secondary: #010370;
   --boton-padding: 15px 25px;
 }
 
-.hero{
+.hero {
   width: 100%;
   height: 100vh;
-  background: var(--background), url('../recursos/fondoPrincipal.png');
+  background: var(--background), url("../recursos/fondoPrincipal.png");
   background-repeat: no-repeat;
   background-size: inherit;
   background-attachment: fixed;
@@ -21,35 +19,35 @@
   position: relative;
 }
 
-.hero .container{
+.hero .container {
   padding: 0;
 }
 
 header.hero {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-#sobreMi{
-  scroll-margin-top: -485px;/*barra de navehgacion sobre DevGsoft*/
+#sobreMi {
+  scroll-margin-top: -510px; /*barra de navehgacion sobre DevGsoft*/
 }
 
-#productos{
-  scroll-margin-top: 300px;/*hace scroll asta productos*/
+#productos {
+  scroll-margin-top: 300px; /*hace scroll asta productos*/
 }
 
-#nuestros_servicios{
-  scroll-margin-top: -470px;/*barra de navegacion sobre servicios*/
+#nuestros_servicios {
+  scroll-margin-top: -470px; /*barra de navegacion sobre servicios*/
 }
 
-#sobre_softG{
+#sobre_softG {
   scroll-margin-top: -340px;
 }
 
-.container{
+.container {
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
@@ -57,111 +55,109 @@ html{
   max-width: 1200px;
 }
 
-
-.subtitle{
+.subtitle {
   color: var(--color-primary);
   font-size: 2.25rem;
   margin-bottom: 35px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
 }
 
-.subtitle__testimony{
+.subtitle__testimony {
   color: var(--color-primary);
   font-size: 2rem;
   margin-bottom: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.subtitle1{
+.subtitle1 {
   color: var(--color-primary);
   font-size: 2.5rem;
   margin-bottom: 35px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.subtitle2{
+.subtitle2 {
   color: #010370;
 }
 
-.about__paragraph{/*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
+.about__paragraph {
+  /*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
   color: #010370;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 10px 10px;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;  
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 10px 10px; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto;
 }
 
-
-.nav{
+.nav {
   display: flex;
   justify-content: flex-end;
   height: 70px;
   align-items: center;
   font-weight: 700;
-
 }
 
-.nav--footer{
+.nav--footer {
   font-weight: 300;
   justify-content: flex-start;
 }
 
-.nav__items{
-  color: #0400FA; /*color de las letras en la barra*/
+.nav__items {
+  color: #0400fa; /*color de las letras en la barra*/
   text-decoration: none;
   margin-right: 20px;
   padding: 10px 15px;
   font-weight: inherit;
 }
 
-.nav__items--cta{
-  border: 1px solid #0400ff;/*color del cuadro de contactame ahora*/
+.nav__items--cta {
+  border: 1px solid #0400ff; /*color del cuadro de contactame ahora*/
 }
 
-.nav__items--footer{
+.nav__items--footer {
   padding: 10px;
 }
 
-.hero__container{
+.hero__container {
   display: flex;
   height: calc(100vh - 10px);
   align-items: center;
   color: #ffffff; /*color de letras de bienvenida*/
 }
 
-.hero__texts{
+.hero__texts {
   width: 80%;
   margin-bottom: 50px;
 }
 
-.hero__title{
+.hero__title {
   font-size: 3.2rem;
 }
 
 .hero__subtitle {
-  font-size: 1.1rem;          /* Tamaño de la fuente */
-  font-weight: 300;           /* Grosor de la fuente */
-  margin: 15px 15px;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  font-weight: 300; /* Grosor de la fuente */
+  margin: 15px 15px; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
 }
 
-.hero__subtitle2{
+.hero__subtitle2 {
   font-size: 1rem;
   font-weight: 300;
   margin: 15px 0;
 }
 
-.hero_cta{
+.hero_cta {
   display: inline-block;
   background: #fff;
   padding: var(--boton-padding);
@@ -170,7 +166,7 @@ html{
   border-radius: 40px;
 }
 
-.hero__wave{
+.hero__wave {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -180,12 +176,12 @@ html{
 
 /* about */
 
-.presentacion{
+.presentacion {
   padding-top: 0;
   text-align: center;
 }
 
-.presentation__picture{
+.presentation__picture {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -200,18 +196,7 @@ html{
 }
 */
 
-.presentacion_cta_button{
-  display: inline-block;
-  margin-top: 30px;
-  background: #27b600;
-  color: #fff;/*color del las letras del boton*/
-  text-decoration: none;
-  padding: var(--boton-padding);
-  border-radius: 40px;
-  font-family: 'Poppins', sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Desplazamiento, difuminado, color */
-}
-.about{
+.about {
   min-height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -220,15 +205,15 @@ html{
   align-items: center;
 }
 
-.about__img{
+.about__img {
   text-align: center;
 }
 
-.about__img--left{
+.about__img--left {
   text-align: left;
 }
 
-.about__picture{
+.about__picture {
   max-width: 80%;
 }
 
@@ -240,54 +225,54 @@ html{
 
 /* projects */
 
-.projects{
-  background: #d6d7ff; 
+.projects {
+  background: #d6d7ff;
 }
 
-.projects__grid{
+.projects__grid {
   display: grid;
   height: 550px;
   grid-template-areas:
-  "imagen1 imagen2"
-  "imagen3 imagen4";
+    "imagen1 imagen2"
+    "imagen3 imagen4";
   gap: 10px;
 }
 
-.projectos__item{
+.projectos__item {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.projects__img{
+.projects__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
 }
 
-.projectos__item:nth-of-type(1){
+.projectos__item:nth-of-type(1) {
   grid-area: imagen1;
 }
 
-.projectos__item:nth-of-type(2){
+.projectos__item:nth-of-type(2) {
   grid-area: imagen2;
 }
-.projectos__item:nth-of-type(3){
+.projectos__item:nth-of-type(3) {
   grid-area: imagen3;
 }
-.projectos__item:nth-of-type(4){
+.projectos__item:nth-of-type(4) {
   grid-area: imagen4;
 }
-.projectos__item:nth-of-type(5){
+.projectos__item:nth-of-type(5) {
   grid-area: imagen5;
 }
 
 /*efecto de trancicion */
-.projects__hover{
+.projects__hover {
   position: absolute;
-  background: #283dff8c; 
+  background: #283dff8c;
   top: 0;
   left: 0;
   width: 100%;
@@ -299,86 +284,80 @@ html{
   justify-content: center;
   transform: translateX(100%);
   cursor: pointer;
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-.projectos__item:hover .projects__hover{
+.projectos__item:hover .projects__hover {
   transform: translateX(0%);
 }
 
-.projects_icon{
+.projects_icon {
   margin-top: 10px;
   font-size: 30px;
 }
 
 /*----------------------------------- Footer ------------------------------*/
 
-.footer{
-  background-color: #342D87;
+.footer {
+  background-color: #342d87;
 }
 
-.footer__title{
+.footer__title {
   font-weight: 300;
-  font-size: 20px;/* Tamaño de la fuente */
+  font-size: 20px; /* Tamaño de la fuente */
   margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;           /* Grosor de la fuente */
-
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* Grosor de la fuente */
 }
 
 .footer__paragraph {
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 300;           /* Grosor de la fuente */
-  margin: 1px 1px;             /* Espaciado arriba y abajo */
-  max-width: 500px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.8;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: justify;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;  
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 300; /* Grosor de la fuente */
+  margin: 1px 1px; /* Espaciado arriba y abajo */
+  max-width: 500px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.8; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: justify; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto;
 }
-
 
 /* ---------- footer__copy container ----------*/
 
-.footer__copy{
+.footer__copy {
   --padding-container: 80px 0;
   text-align: center;
   color: #fff;
-  padding-top: 30px;/* Establece un relleno de 30px en la parte superior */
-  padding-bottom: 30px;/* Establece un relleno de 30px en la parte inferior */
-  
+  padding-top: 30px; /* Establece un relleno de 30px en la parte superior */
+  padding-bottom: 30px; /* Establece un relleno de 30px en la parte inferior */
 }
 
-.footer__copyright{
+.footer__copyright {
   font-weight: 300;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;          /* Tamaño de la fuente */
-  
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
 }
 
-
-.footer__icons{
+.footer__icons {
   margin-bottom: 10px;
 }
 
-.footer__img{
+.footer__img {
   width: 30px;
 }
-
 
 /* About */
 .aboutt {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .subtitlee {
   color: var(--color-primary);
   font-size: 2.25rem;
   margin-bottom: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
 }
 
@@ -392,7 +371,7 @@ html{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .aboutt__main {
@@ -403,7 +382,6 @@ html{
   gap: 2rem;
   flex-wrap: wrap; /* Asegura que las columnas se ajusten en pantallas más pequeñas */
 }
-
 
 .aboutt__icon {
   width: 60px; /* Ajusta el tamaño de los íconos según lo necesites */
@@ -416,7 +394,7 @@ html{
   font-weight: 600;
   margin: 15px 0;
   line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .aboutt__paragraph {
@@ -427,89 +405,82 @@ html{
   text-align: center;
   margin: 10px 0;
   max-width: 260px; /* Asegura que los párrafos no se estiren demasiado */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .aboutt__paragraph__services {
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 10px 10x;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: center ;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 10px 10x; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
-
-
-
 
 /*estilos para seccion info de SOFTG*/
 
-.info_softG{
+.info_softG {
   background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
 }
 
-
-
 .knowledge {
   background-color: #ffffff;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+    radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
   overflow: hidden;
 }
 
-.knowledge__container{
+.knowledge__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   align-items: center;
 }
 
-.knowledge__picture{
+.knowledge__picture {
   max-width: 500px;
 }
 
-.knowledge__paragraph{
- 
+.knowledge__paragraph {
   margin-bottom: 15px;
 
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 10px 10px;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 10px 10px; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
-.knowledge__img{
+.knowledge__img {
   width: 100%;
   display: block;
 }
 
-
 /* Testimony */
 
-.testimony{
+.testimony {
   background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
 }
 
-
-.testimony__container{
+.testimony__container {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   gap: 1em;
   align-items: center;
 }
 
-.testimony__body{
+.testimony__body {
   display: grid;
   grid-template-columns: 1fr max-content;
   justify-content: space-between;
@@ -521,14 +492,13 @@ html{
   pointer-events: none;
 }
 
-
-.testimony__body--show{
+.testimony__body--show {
   pointer-events: unset;
   opacity: 1;
   transition: opacity 1.5s ease-in-out;
 }
 
-.testimony__img{
+.testimony__img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -536,80 +506,79 @@ html{
   object-position: 50% 30%;
 }
 
-.testimony__texts{
+.testimony__texts {
   max-width: 700px;
 }
 
-.testimony__course{
-  background-color: var(--color-primary);/*esiste una especie de espacio para poner algun texto debajo del texto principal*/
+.testimony__course {
+  background-color: var(
+    --color-primary
+  ); /*esiste una especie de espacio para poner algun texto debajo del texto principal*/
   color: #fff;
   display: inline-block;
   padding: 5px;
-
 }
 
-.testimony__arrow{
+.testimony__arrow {
   width: 90%;
   cursor: pointer;
 }
 
 .testimony__review {
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 10px 10px;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 10px 10px; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
 /* Questions */
 
-.questions{
+.questions {
   text-align: center;
 }
 
-.questions__container{
+.questions__container {
   display: grid;
   gap: 1.5em;
   padding-top: 40px;
   padding-bottom: 100px;
 }
 
-.questions__padding{
+.questions__padding {
   padding: 0;
-  transition: padding .3s;
+  transition: padding 0.3s;
   border: 1px solid #4545db52;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.171); /* Desplazamiento, difuminado, color */
 }
 
-.questions__padding--add{
+.questions__padding--add {
   padding-bottom: 30px;
 }
 
-.questions__answer{
+.questions__answer {
   padding: 0 30px 0;
   overflow: hidden;
 }
 
-.questions__title{
+.questions__title {
   text-align: left;
   display: flex;
   padding: 30px 0 30px;
   cursor: pointer;
-  color:#010370;
+  color: #010370;
   justify-content: space-between;
-  font-size: 1.1rem;          /* Tamaño de la fuente */
-  font-family: 'Poppins', sans-serif;
-
-  
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  font-family: "Poppins", sans-serif;
 }
 
-.questions__arrow{
+.questions__arrow {
   border-radius: 50%;
   background-color: var(--color-title);
   width: 25px;
@@ -619,71 +588,71 @@ html{
   align-items: center;
   align-self: flex-end;
   margin-left: 10px;
-  transition:  transform .3s;
+  transition: transform 0.3s;
 }
 
-.questions__arrow--rotate{
+.questions__arrow--rotate {
   transform: rotate(180deg);
 }
 
-.questions__show{
+.questions__show {
   text-align: left;
   height: 0;
-  transition: height .4s;
+  transition: height 0.4s;
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
 }
 
-.questions__img{
+.questions__img {
   display: block;
 }
 
-.questions__copy{
+.questions__copy {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 30px;
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
-.questions__paragraph{
+.questions__paragraph {
   color: #010370;
-  font-size: 1.1rem;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 15px 10;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.2;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 15px 10; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.2; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
-.subtitle_llamado_a_la_accion{
+.subtitle_llamado_a_la_accion {
   color: var(--color-primary);
-  font-size: 2rem;          /* Tamaño de la fuente */
-  font-weight: 600;           /* Grosor de la fuente */
-  margin: 25px 15px;             /* Espaciado arriba y abajo */
-  max-width: 1000px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 2rem; /* Tamaño de la fuente */
+  font-weight: 600; /* Grosor de la fuente */
+  margin: 25px 15px; /* Espaciado arriba y abajo */
+  max-width: 1000px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
-
-.footer__title, .footer__newsletter{
+.footer__title,
+.footer__newsletter {
   color: #fff;
 }
 
@@ -708,8 +677,8 @@ html{
 
 /* Eliminar borde de enfoque al hacer clic */
 #whatsapp-icon:focus {
-  outline: none;  /* Elimina el borde de enfoque */
-  border: none;   /* Elimina cualquier borde */
+  outline: none; /* Elimina el borde de enfoque */
+  border: none; /* Elimina cualquier borde */
 }
 
 /* Estilos para el icono de WhatsApp dentro del contenedor */
@@ -723,7 +692,7 @@ html{
 
 /* El pequeño punto rojo estático en la parte superior */
 #whatsapp-icon::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -6px; /* Coloca el punto un poco más arriba */
   left: 50%;
@@ -737,7 +706,7 @@ html{
 
 /* Pseudo-elemento para las ondas */
 #whatsapp-icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px; /* Coloca las ondas un poco arriba del punto */
   left: 50%;
@@ -772,7 +741,7 @@ html{
   display: flex;
   gap: 15px;
   justify-content: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer__icon-link {
@@ -789,7 +758,7 @@ html{
 }
 
 .footer__icon-link:hover {
-  color: #007BFF; /* Color al pasar el mouse */
+  color: #007bff; /* Color al pasar el mouse */
 }
 
 /* ----------------------------------------------------------------------------Estilo para el botón */
@@ -798,7 +767,7 @@ html{
   bottom: 20px;
   right: 20px;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -809,12 +778,16 @@ html{
 
 /* Estilo para el título del formulario */
 .contact-form h2 {
-  color: var(--color-secondary); /* El color de tu esquema principal (azul vibrante) */
+  color: var(
+    --color-secondary
+  ); /* El color de tu esquema principal (azul vibrante) */
 }
 
 /* Estilo para las etiquetas del formulario */
 .contact-form label {
-  color: var(--color-secondary); /* Un tono más oscuro de azul para las etiquetas */
+  color: var(
+    --color-secondary
+  ); /* Un tono más oscuro de azul para las etiquetas */
   font-size: 16px; /* Opcional: ajustar el tamaño de la fuente */
   font-weight: bold; /* Opcional: hacer las etiquetas más visibles */
 }
@@ -822,12 +795,12 @@ html{
 /* Estilo para los campos de entrada (input y textarea) */
 .contact-form input,
 .contact-form textarea {
-    color: #09003b; /* Un color oscuro para el texto (gris oscuro) */
+  color: #09003b; /* Un color oscuro para el texto (gris oscuro) */
 }
 
 /* Estilo para el formulario flotante */
 .contact-form-container {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: none; /* Inicialmente oculto */
   position: fixed;
   top: 0;
@@ -865,14 +838,13 @@ html{
   border: 1px solid #656ff0;
   border-radius: 5px;
   font-size: 16px;
-  
 }
 /* Cambiar el color del texto del placeholder en todos los campos del formulario */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #0105fa70; /* Color que quieres para el placeholder */
-    font-style: italic; /* Opcional: poner el texto en cursiva */
-    font-family: 'Poppins', sans-serif;
+  color: #0105fa70; /* Color que quieres para el placeholder */
+  font-style: italic; /* Opcional: poner el texto en cursiva */
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-form button {
@@ -885,7 +857,6 @@ html{
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 10px;
-  
 }
 
 .contact-form button:hover {
@@ -894,8 +865,7 @@ html{
 
 /* Estilo para el botón "Cerrar" */
 #closeForm {
-  background-color: #DC3700;
-  
+  background-color: #dc3700;
 }
 
 #closeForm:hover {
@@ -903,43 +873,41 @@ html{
 }
 /*-------fin formulario*/
 
-
 /*-----------------------------------------------------------------------------------------------------------Media queries------------------*/
 
-
-.subtitle__testimony{
+.subtitle__testimony {
   color: var(--color-primary);
   font-size: 2rem;
   margin-bottom: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.subtitle1{
+.subtitle1 {
   color: var(--color-primary);
   font-size: 2.5rem;
   margin-bottom: 35px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.subtitle2{
+.subtitle2 {
   color: #010370;
 }
 
-.about__paragraph{/*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
+.about__paragraph {
+  /*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
   color: #010370;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 10px 10px;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;  
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 10px 10px; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto;
 }
 
-
-.nav{
+.nav {
   display: flex;
   justify-content: flex-end;
   height: 70px;
@@ -947,55 +915,54 @@ html{
   font-weight: 700;
 }
 
-.nav--footer{
+.nav--footer {
   font-weight: 300;
   justify-content: flex-start;
 }
 
-.nav__items{
-  color: #0400FA; /*color de las letras en la barra*/
+.nav__items {
+  color: #0400fa; /*color de las letras en la barra*/
   text-decoration: none;
   margin-right: 20px;
   padding: 10px 15px;
   font-weight: inherit;
 }
 
-.nav__items--cta{
-  border: 1px solid #0400ff;/*color del cuadro de contactame ahora*/
+.nav__items--cta {
+  border: 1px solid #0400ff; /*color del cuadro de contactame ahora*/
 }
 
-.nav__items--footer{
+.nav__items--footer {
   padding: 10px;
 }
 
-
-.hero__texts{
+.hero__texts {
   width: 80%;
   margin-bottom: 50px;
 }
 
-.hero__title{
+.hero__title {
   font-size: 3.2rem;
 }
 
 .hero__subtitle {
-  font-size: 1.1rem;          /* Tamaño de la fuente */
-  font-weight: 300;           /* Grosor de la fuente */
-  margin: 15px 15px;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  font-weight: 300; /* Grosor de la fuente */
+  margin: 15px 15px; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
 }
 
-.hero__subtitle2{
+.hero__subtitle2 {
   font-size: 1rem;
   font-weight: 300;
   margin: 15px 0;
 }
 
-.hero_cta{
+.hero_cta {
   display: inline-block;
   background: #fff;
   padding: var(--boton-padding);
@@ -1004,7 +971,7 @@ html{
   border-radius: 40px;
 }
 
-.hero__wave{
+.hero__wave {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1014,12 +981,12 @@ html{
 
 /* about */
 
-.presentacion{
+.presentacion {
   padding-top: 0;
   text-align: center;
 }
 
-.presentation__picture{
+.presentation__picture {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -1034,18 +1001,18 @@ html{
 }
 */
 
-.presentacion_cta_button{
+.presentacion_cta_button {
   display: inline-block;
   margin-top: 30px;
   background: #27b600;
-  color: #fff;/*color del las letras del boton*/
+  color: #fff; /*color del las letras del boton*/
   text-decoration: none;
   padding: var(--boton-padding);
   border-radius: 40px;
-  font-family: 'Poppins', sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Desplazamiento, difuminado, color */
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); /* Desplazamiento, difuminado, color */
 }
-.about{
+.about {
   min-height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1054,15 +1021,15 @@ html{
   align-items: center;
 }
 
-.about__img{
+.about__img {
   text-align: center;
 }
 
-.about__img--left{
+.about__img--left {
   text-align: left;
 }
 
-.about__picture{
+.about__picture {
   max-width: 80%;
 }
 
@@ -1072,11 +1039,10 @@ html{
   font-weight: 300;
 }*/
 
-
 /*efecto de trancicion */
-.projects__hover{
+.projects__hover {
   position: absolute;
-  background: #283dff8c; 
+  background: #283dff8c;
   top: 0;
   left: 0;
   width: 100%;
@@ -1088,87 +1054,80 @@ html{
   justify-content: center;
   transform: translateX(100%);
   cursor: pointer;
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-.projectos__item:hover .projects__hover{
+.projectos__item:hover .projects__hover {
   transform: translateX(0%);
 }
 
-.projects_icon{
+.projects_icon {
   margin-top: 10px;
   font-size: 30px;
 }
 
 /*----------------------------------- Footer ------------------------------*/
 
-.footer{
-  background-color: #342D87;
+.footer {
+  background-color: #342d87;
 }
 
-
-.footer__container{
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* Alinea las columnas al inicio (en la parte superior) evitando que no esten horizontalmente alineadas*/
   border-bottom: 1px solid #fff; /*vuelve mas gruesa la linea */
-  padding-bottom: 60px; 
+  padding-bottom: 60px;
 }
-
 
 .footer__paragraph {
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;          /* Tamaño de la fuente */
-  font-weight: 300;           /* Grosor de la fuente */
-  margin: 1px 1px;             /* Espaciado arriba y abajo */
-  max-width: 525px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.8;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: justify;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;  
+  font-family: "Poppins", sans-serif;
+  font-size: 15px; /* Tamaño de la fuente */
+  font-weight: 300; /* Grosor de la fuente */
+  margin: 1px 1px; /* Espaciado arriba y abajo */
+  max-width: 525px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.8; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: justify; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto;
 }
-
 
 /* ---------- footer__copy container ----------*/
 
-.footer__copy{
+.footer__copy {
   --padding-container: 80px 0;
   text-align: center;
   color: #fff;
-  padding-top: 30px;/* Establece un relleno de 30px en la parte superior */
-  padding-bottom: 30px;/* Establece un relleno de 30px en la parte inferior */
-  
+  padding-top: 30px; /* Establece un relleno de 30px en la parte superior */
+  padding-bottom: 30px; /* Establece un relleno de 30px en la parte inferior */
 }
 
-.footer__copyright{
+.footer__copyright {
   font-weight: 300;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;          /* Tamaño de la fuente */
-  
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
 }
 
-
-.footer__icons{
+.footer__icons {
   margin-bottom: 10px;
 }
 
-.footer__img{
+.footer__img {
   width: 30px;
 }
-
 
 /* About */
 .aboutt {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .subtitlee {
   color: var(--color-primary);
   font-size: 2.25rem;
   margin-bottom: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
 }
 
@@ -1182,7 +1141,7 @@ html{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .aboutt__main {
@@ -1193,7 +1152,6 @@ html{
   gap: 2rem;
   flex-wrap: wrap; /* Asegura que las columnas se ajusten en pantallas más pequeñas */
 }
-
 
 .aboutt__icons {
   display: flex;
@@ -1219,7 +1177,7 @@ html{
   font-weight: 600;
   margin: 15px 0;
   line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .aboutt__paragraph {
@@ -1230,73 +1188,69 @@ html{
   text-align: center;
   margin: 10px 0;
   max-width: 260px; /* Asegura que los párrafos no se estiren demasiado */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*estilos para seccion info de SOFTG*/
 
-.info_softG{
+.info_softG {
   background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
 }
 
-
-
 .knowledge {
   background-color: #ffffff;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+    radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
   overflow: hidden;
 }
 
-.knowledge__container{
+.knowledge__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   align-items: center;
 }
 
-.knowledge__picture{
+.knowledge__picture {
   max-width: 500px;
 }
 
-.knowledge__paragraph{
- 
+.knowledge__paragraph {
   margin-bottom: 15px;
 
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 10px 10px;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 10px 10px; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
-.knowledge__img{
+.knowledge__img {
   width: 100%;
   display: block;
 }
 
-
 /* Testimony */
 
-.testimony{
+.testimony {
   background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
 }
 
-
-.testimony__container{
+.testimony__container {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   gap: 1em;
   align-items: center;
 }
 
-.testimony__body{
+.testimony__body {
   display: grid;
   grid-template-columns: 1fr max-content;
   justify-content: space-between;
@@ -1308,14 +1262,13 @@ html{
   pointer-events: none;
 }
 
-
-.testimony__body--show{
+.testimony__body--show {
   pointer-events: unset;
   opacity: 1;
   transition: opacity 1.5s ease-in-out;
 }
 
-.testimony__img{
+.testimony__img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -1323,80 +1276,79 @@ html{
   object-position: 50% 30%;
 }
 
-.testimony__texts{
+.testimony__texts {
   max-width: 700px;
 }
 
-.testimony__course{
-  background-color: var(--color-primary);/*esiste una especie de espacio para poner algun texto debajo del texto principal*/
+.testimony__course {
+  background-color: var(
+    --color-primary
+  ); /*esiste una especie de espacio para poner algun texto debajo del texto principal*/
   color: #fff;
   display: inline-block;
   padding: 5px;
-
 }
 
-.testimony__arrow{
+.testimony__arrow {
   width: 90%;
   cursor: pointer;
 }
 
 .testimony__review {
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 10px 10px;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 10px 10px; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
 /* Questions */
 
-.questions{
+.questions {
   text-align: center;
 }
 
-.questions__container{
+.questions__container {
   display: grid;
   gap: 1.5em;
   padding-top: 40px;
   padding-bottom: 100px;
 }
 
-.questions__padding{
+.questions__padding {
   padding: 0;
-  transition: padding .3s;
+  transition: padding 0.3s;
   border: 1px solid #4545db52;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.171); /* Desplazamiento, difuminado, color */
 }
 
-.questions__padding--add{
+.questions__padding--add {
   padding-bottom: 30px;
 }
 
-.questions__answer{
+.questions__answer {
   padding: 0 30px 0;
   overflow: hidden;
 }
 
-.questions__title{
+.questions__title {
   text-align: left;
   display: flex;
   padding: 30px 0 30px;
   cursor: pointer;
-  color:#010370;
+  color: #010370;
   justify-content: space-between;
-  font-size: 1.1rem;          /* Tamaño de la fuente */
-  font-family: 'Poppins', sans-serif;
-
-  
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  font-family: "Poppins", sans-serif;
 }
 
-.questions__arrow{
+.questions__arrow {
   border-radius: 50%;
   background-color: var(--color-title);
   width: 25px;
@@ -1406,67 +1358,67 @@ html{
   align-items: center;
   align-self: flex-end;
   margin-left: 10px;
-  transition:  transform .3s;
+  transition: transform 0.3s;
 }
 
-.questions__arrow--rotate{
+.questions__arrow--rotate {
   transform: rotate(180deg);
 }
 
-.questions__show{
+.questions__show {
   text-align: left;
   height: 0;
-  transition: height .4s;
+  transition: height 0.4s;
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
 }
 
-.questions__img{
+.questions__img {
   display: block;
 }
 
-.questions__copy{
+.questions__copy {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 30px;
   color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
-.questions__paragraph{
+.questions__paragraph {
   color: #010370;
-  font-size: 1.1rem;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 15px 10;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.2;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin: 15px 10; /* Espaciado arriba y abajo */
+  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.2; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
-.subtitle_llamado_a_la_accion{
+.subtitle_llamado_a_la_accion {
   color: var(--color-primary);
-  font-size: 2rem;          /* Tamaño de la fuente */
-  font-weight: 600;           /* Grosor de la fuente */
-  margin: 25px 15px;             /* Espaciado arriba y abajo */
-  max-width: 1000px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
+  font-size: 2rem; /* Tamaño de la fuente */
+  font-weight: 600; /* Grosor de la fuente */
+  margin: 25px 15px; /* Espaciado arriba y abajo */
+  max-width: 1000px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  font-family: "Poppins", sans-serif;
 }
 
 /* ------------------------------------------ Estilos para el contenedor del icono de WhatsApp */
@@ -1490,8 +1442,8 @@ html{
 
 /* Eliminar borde de enfoque al hacer clic */
 #whatsapp-icon:focus {
-  outline: none;  /* Elimina el borde de enfoque */
-  border: none;   /* Elimina cualquier borde */
+  outline: none; /* Elimina el borde de enfoque */
+  border: none; /* Elimina cualquier borde */
 }
 
 /* Estilos para el icono de WhatsApp dentro del contenedor */
@@ -1505,7 +1457,7 @@ html{
 
 /* El pequeño punto rojo estático en la parte superior */
 #whatsapp-icon::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -6px; /* Coloca el punto un poco más arriba */
   left: 50%;
@@ -1519,7 +1471,7 @@ html{
 
 /* Pseudo-elemento para las ondas */
 #whatsapp-icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px; /* Coloca las ondas un poco arriba del punto */
   left: 50%;
@@ -1554,7 +1506,7 @@ html{
   display: flex;
   gap: 15px;
   justify-content: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer__icon-link {
@@ -1571,7 +1523,7 @@ html{
 }
 
 .footer__icon-link:hover {
-  color: #007BFF; /* Color al pasar el mouse */
+  color: #007bff; /* Color al pasar el mouse */
 }
 
 /* ----------------------------------------------------------------------------Estilo para el botón */
@@ -1580,7 +1532,7 @@ html{
   bottom: 20px;
   right: 20px;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -1591,12 +1543,16 @@ html{
 
 /* Estilo para el título del formulario */
 .contact-form h2 {
-  color: var(--color-secondary); /* El color de tu esquema principal (azul vibrante) */
+  color: var(
+    --color-secondary
+  ); /* El color de tu esquema principal (azul vibrante) */
 }
 
 /* Estilo para las etiquetas del formulario */
 .contact-form label {
-  color: var(--color-secondary); /* Un tono más oscuro de azul para las etiquetas */
+  color: var(
+    --color-secondary
+  ); /* Un tono más oscuro de azul para las etiquetas */
   font-size: 16px; /* Opcional: ajustar el tamaño de la fuente */
   font-weight: bold; /* Opcional: hacer las etiquetas más visibles */
 }
@@ -1604,12 +1560,12 @@ html{
 /* Estilo para los campos de entrada (input y textarea) */
 .contact-form input,
 .contact-form textarea {
-    color: #09003b; /* Un color oscuro para el texto (gris oscuro) */
+  color: #09003b; /* Un color oscuro para el texto (gris oscuro) */
 }
 
 /* Estilo para el formulario flotante */
 .contact-form-container {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: none; /* Inicialmente oculto */
   position: fixed;
   top: 0;
@@ -1647,14 +1603,13 @@ html{
   border: 1px solid #656ff0;
   border-radius: 5px;
   font-size: 16px;
-  
 }
 /* Cambiar el color del texto del placeholder en todos los campos del formulario */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #0105fa70; /* Color que quieres para el placeholder */
-    font-style: italic; /* Opcional: poner el texto en cursiva */
-    font-family: 'Poppins', sans-serif;
+  color: #0105fa70; /* Color que quieres para el placeholder */
+  font-style: italic; /* Opcional: poner el texto en cursiva */
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-form button {
@@ -1667,7 +1622,6 @@ html{
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 10px;
-  
 }
 
 .contact-form button:hover {
@@ -1676,15 +1630,13 @@ html{
 
 /* Estilo para el botón "Cerrar" */
 #closeForm {
-  background-color: #DC3700;
-  
+  background-color: #dc3700;
 }
 
 #closeForm:hover {
   background-color: #ff4000;
 }
 /*-------fin formulario*/
-
 
 /*-----------------------------------------------------------------------------------------------------------Media queries------------------*/
 
@@ -1738,58 +1690,75 @@ html{
 
 @media (max-width: 800px) {
   /* Ocultar los enlaces del menú en pantallas pequeñas */
+
+  #sobreMi {
+    scroll-margin-top: -760px; /*barra de navehgacion sobre DevGsoft*/
+  }
+
+  #productos {
+    scroll-margin-top: 300px; /*hace scroll asta productos*/
+  }
+
+  #nuestros_servicios {
+    scroll-margin-top: -900px; /*barra de navegacion sobre servicios*/
+  }
+
+  #sobre_softG {
+    scroll-margin-top: -1140px;
+  }
+
   .nav__links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      background-color: #ffffff;
-      position: absolute;
-      top: 60px; /* Ajuste para debajo de la barra */
-      left: 0;
-      padding: 10px 0;
-      z-index: 999;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px; /* Ajuste para debajo de la barra */
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
   }
 
   /* Mostrar el menú hamburguesa */
   .menu-toggle {
-      display: flex;
+    display: flex;
   }
 
   /* Mostrar el menú cuando el icono de hamburguesa se activa */
   .nav__links.show {
-      display: flex;
+    display: flex;
   }
 
   /* Opcional: cambia el color del menú hamburguesa cuando se activa */
   .menu-toggle.active .bar {
-      background-color: #e74c3c;  /* Cambia el color de las barras */
+    background-color: #e74c3c; /* Cambia el color de las barras */
   }
 
   /* Estilo para la sección Hero */
   .hero__container {
     display: flex;
-    height: 100vh;            /* Hace que ocupe toda la altura de la ventana */
-    text-align: center;       /* Asegura que el texto dentro de los elementos esté centrado */
+    height: 100vh; /* Hace que ocupe toda la altura de la ventana */
+    text-align: center; /* Asegura que el texto dentro de los elementos esté centrado */
   }
 
   .hero_texts {
-    max-width: 800px;         /* Limita el ancho para no hacer el texto demasiado amplio */
-    padding: 20px;            /* Espaciado interior */
-    margin-top: -60px; 
+    max-width: 800px; /* Limita el ancho para no hacer el texto demasiado amplio */
+    padding: 20px; /* Espaciado interior */
+    margin-top: -60px;
   }
 
   .hero__title {
-    font-size: 3rem;          /* Tamaño grande para el título */
-    margin-bottom: 30px;      /* Espacio debajo del título */
-    margin-top: -90px; 
+    font-size: 3rem; /* Tamaño grande para el título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    margin-top: -90px;
   }
 
   .hero__subtitle {
-    font-size: 1.25rem;       /* Tamaño adecuado para el subtítulo */
-    margin-bottom: 20px;      /* Espacio debajo del subtítulo */
+    font-size: 1.25rem; /* Tamaño adecuado para el subtítulo */
+    margin-bottom: 20px; /* Espacio debajo del subtítulo */
     text-align: center;
-    line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
+    line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
   }
   .contact-form {
     background-color: #ffffffe1; /*le agrega color al formulario*/
@@ -1801,7 +1770,7 @@ html{
 
   /* ----- SECCION SOBRE NOSOSTROS ------*/
 
-  .about{
+  .about {
     min-height: 400px;
     display: grid;
     grid-template-columns: 1fr;
@@ -1810,83 +1779,79 @@ html{
     align-items: center;
   }
 
-  .about__img--left{
+  .about__img--left {
     text-align: center;
-
   }
-  
-  .about__picture{
+
+  .about__picture {
     max-width: 100%;
   }
 
-  .subtitle{
+  .subtitle {
     color: var(--color-primary);
     font-size: 2.25rem;
     margin-bottom: 35px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     text-align: center;
   }
-  
-  .about__paragraph{/*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
+
+  .about__paragraph {
+    /*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
     color: #010370;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;          /* Tamaño de la fuente */
-    font-weight: 400;           /* Grosor de la fuente */
-    margin: 10px 10px;             /* Espaciado arriba y abajo */
-    max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-    line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-    text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-    margin-left: auto;          /* Centrar horizontalmente */
-    margin-right: auto;  
+    font-family: "Poppins", sans-serif;
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: 400; /* Grosor de la fuente */
+    margin: 10px 10px; /* Espaciado arriba y abajo */
+    max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+    line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+    text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto;
   }
 
   /*seccion CON SOFTG*/
 
-  
-  .knowledge__container{
+  .knowledge__container {
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr;
     gap: 3em;
     text-align: center;
   }
 
-  .knowledge__picture{
+  .knowledge__picture {
     grid-row: 1/2;
     justify-self: center;
   }
-  
-  
-  .knowledge__paragraph{
-    text-align: center;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+
+  .knowledge__paragraph {
+    text-align: center; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
   }
 
-   /*seccion TESTIMONIO*/
+  /*seccion TESTIMONIO*/
 
-   
-   .knowledge__picture{
-      grid-row: 1/2;
-      justify-self: center;
-    }
+  .knowledge__picture {
+    grid-row: 1/2;
+    justify-self: center;
+  }
 
-    .testimony__container{
-      grid-template-columns: 30px 1fr 30px;
-    }
+  .testimony__container {
+    grid-template-columns: 30px 1fr 30px;
+  }
 
-    .testimony__body{
-      grid-template-columns: 1fr;
-      grid-template-rows: max-content max-content;
-      gap: 3em;
-      justify-items:center ;
-    }
+  .testimony__body {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    gap: 3em;
+    justify-items: center;
+  }
 
-
-  .testimony__img{
+  .testimony__img {
     width: 200px;
     height: 200px;
   }
 
-  .subtitle__testimony{
+  .subtitle__testimony {
     font-size: 1.8rem;
   }
   /*seccion de PREGUNTAS*/
@@ -1896,43 +1861,79 @@ html{
     padding-bottom: 60px;
   }
 
-  .questions__copy{
-      width: 100%;
+  .questions__copy {
+    width: 100%;
   }
-  
-  .subtitle_llamado_a_la_accion{
-    font-size: 1.7rem;          /* Tamaño de la fuente */
 
+  .subtitle_llamado_a_la_accion {
+    font-size: 1.7rem; /* Tamaño de la fuente */
   }
-  
-  .footer__container{
+
+  .footer__container {
     flex-wrap: wrap;
   }
-  
-  .footer__title{
+
+  .footer__title {
     margin-top: 70px;
   }
 
   .footer__paragraph {
-    max-width: 1000px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-    line-height: 1.8;           /* Espaciado entre líneas para mejorar la legibilidad */
-    text-align: justify;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-
+    max-width: 1000px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+    line-height: 1.8; /* Espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
   }
-  
 }
 
-@media (min-width: 801px) and (max-width: 1150px) {
+@media (min-width: 801px) and (max-width: 1050px) {
   /* Estilos para tablets en modo portrait o tablet landscape más pequeño */
+
+  #sobreMi {
+    scroll-margin-top: -1230px; /*barra de navehgacion sobre DevGsoft*/
+  }
+
+  #productos {
+    scroll-margin-top: 300px; /*hace scroll asta productos*/
+  }
+
+  #nuestros_servicios {
+    scroll-margin-top: -470px; /*barra de navegacion sobre servicios*/
+  }
+
+  #sobre_softG {
+    scroll-margin-top: -760px;
+  }
+
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px; /* Ajuste para debajo de la barra */
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  /* Mostrar el menú hamburguesa */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Mostrar el menú cuando el icono de hamburguesa se activa */
+  .nav__links.show {
+    display: flex;
+  }
+
+  /* Opcional: cambia el color del menú hamburguesa cuando se activa */
+  .menu-toggle.active .bar {
+    background-color: #e74c3c; /* Cambia el color de las barras */
+  }
+
   .footer__paragraph {
-    max-width: 340px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-    line-height: 1.8;           /* Espaciado entre líneas para mejorar la legibilidad */
-    text-align: justify;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+    max-width: 340px; /* Ancho máximo para evitar que ocupe toda la pantalla */
+    line-height: 1.8; /* Espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
   }
 }
-
-
-
-
-
-
