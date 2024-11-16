@@ -318,19 +318,11 @@ html{
 
 .footer__title{
   font-weight: 300;
-  font-size: 16px;/* Tamaño de la fuente */
+  font-size: 20px;/* Tamaño de la fuente */
   margin-bottom: 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;           /* Grosor de la fuente */
 
-}
-
-.footer__container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #fff; /*vuelve mas gruesa la linea */
-  padding-bottom: 60px;
 }
 
 .footer__paragraph {
@@ -411,18 +403,6 @@ html{
   flex-wrap: wrap; /* Asegura que las columnas se ajusten en pantallas más pequeñas */
 }
 
-.aboutt__icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Alinea los elementos al principio */
-  align-items: center;
-  flex: 1; /* Hace que todas las columnas tengan la misma altura */
-  min-width: 260px; /* Controla el ancho mínimo de cada columna */
-  padding: 1rem;
-  background-color: #ffffff; /* Opcional, para mejorar el diseño */
-  border-radius: 10px; /* Opcional, para redondear las esquinas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185); /* Opcional, para dar un sutil sombreado */
-}
 
 .aboutt__icon {
   width: 60px; /* Ajusta el tamaño de los íconos según lo necesites */
@@ -1125,30 +1105,23 @@ html{
   background-color: #342D87;
 }
 
-.footer__title{
-  font-weight: 300;
-  font-size: 16px;/* Tamaño de la fuente */
-  margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;           /* Grosor de la fuente */
-
-}
 
 .footer__container{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* Alinea las columnas al inicio (en la parte superior) evitando que no esten horizontalmente alineadas*/
   border-bottom: 1px solid #fff; /*vuelve mas gruesa la linea */
-  padding-bottom: 60px;
+  padding-bottom: 60px; 
 }
+
 
 .footer__paragraph {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;          /* Tamaño de la fuente */
+  font-size: 15px;          /* Tamaño de la fuente */
   font-weight: 300;           /* Grosor de la fuente */
   margin: 1px 1px;             /* Espaciado arriba y abajo */
-  max-width: 500px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+  max-width: 525px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
   line-height: 1.8;           /* Espaciado entre líneas para mejorar la legibilidad */
   text-align: justify;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
   margin-left: auto;          /* Centrar horizontalmente */
@@ -1220,6 +1193,7 @@ html{
   flex-wrap: wrap; /* Asegura que las columnas se ajusten en pantallas más pequeñas */
 }
 
+
 .aboutt__icons {
   display: flex;
   flex-direction: column;
@@ -1257,22 +1231,6 @@ html{
   max-width: 260px; /* Asegura que los párrafos no se estiren demasiado */
   font-family: 'Poppins', sans-serif;
 }
-
-.aboutt__paragraph__services {
-  color: #010370;
-  font-size: 16px;          /* Tamaño de la fuente */
-  font-weight: 400;           /* Grosor de la fuente */
-  margin: 10px 10x;             /* Espaciado arriba y abajo */
-  max-width: 800px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4;           /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: center ;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto;          /* Centrar horizontalmente */
-  margin-right: auto;         /* Centrar horizontalmente */
-  font-family: 'Poppins', sans-serif;
-}
-
-
-
 
 /*estilos para seccion info de SOFTG*/
 
@@ -1508,11 +1466,6 @@ html{
   margin-left: auto;          /* Centrar horizontalmente */
   margin-right: auto;         /* Centrar horizontalmente */
   font-family: 'Poppins', sans-serif;
-}
-
-
-.footer__title, .footer__newsletter{
-  color: #fff;
 }
 
 /* ------------------------------------------ Estilos para el contenedor del icono de WhatsApp */
@@ -1958,9 +1911,23 @@ html{
   .footer__title{
     margin-top: 70px;
   }
-  
-  
 
+  .footer__paragraph {
+    max-width: 1000px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+    line-height: 1.8;           /* Espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+
+  }
+  
+}
+
+@media (min-width: 801px) and (max-width: 1150px) {
+  /* Estilos para tablets en modo portrait o tablet landscape más pequeño */
+  .footer__paragraph {
+    max-width: 340px;           /* Ancho máximo para evitar que ocupe toda la pantalla */
+    line-height: 1.8;           /* Espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify;           /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
+  }
 }
 
 
