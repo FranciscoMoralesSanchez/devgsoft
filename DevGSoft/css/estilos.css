@@ -207,14 +207,25 @@ html {
 
 .about__img {
   text-align: center;
-}
-
-.about__img--left {
   text-align: left;
+  position: relative; /* Necesario para posicionar la imagen */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor durante la animación */
 }
 
 .about__picture {
   max-width: 80%;
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  opacity: 0; /* Inicialmente invisible */
+  transform: translateX(
+    100%
+  ); /* Comienza fuera de la pantalla a la izquierda */
+  transition: all 1s ease-out; /* Transición para suavizar el movimiento */
+}
+
+/* Animación de deslizamiento */
+.about__img--visible .about__picture {
+  opacity: 1; /* Hace la imagen visible */
+  transform: translateX(0); /* Mueve la imagen a su posición original */
 }
 
 /*.about__paragraph{
@@ -419,52 +430,6 @@ html {
   margin-left: auto; /* Centrar horizontalmente */
   margin-right: auto; /* Centrar horizontalmente */
   font-family: "Poppins", sans-serif;
-}
-
-/*estilos para seccion info de SOFTG*/
-
-.info_softG {
-  background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
-}
-
-.knowledge {
-  background-color: #ffffff;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
-    radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
-  overflow: hidden;
-}
-
-.knowledge__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
-  align-items: center;
-}
-
-.knowledge__picture {
-  max-width: 500px;
-}
-
-.knowledge__paragraph {
-  margin-bottom: 15px;
-
-  color: #010370;
-  font-size: 16px; /* Tamaño de la fuente */
-  font-weight: 400; /* Grosor de la fuente */
-  margin: 10px 10px; /* Espaciado arriba y abajo */
-  max-width: 800px; /* Ancho máximo para evitar que ocupe toda la pantalla */
-  line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
-  text-align: left; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
-  margin-left: auto; /* Centrar horizontalmente */
-  margin-right: auto; /* Centrar horizontalmente */
-  font-family: "Poppins", sans-serif;
-}
-
-.knowledge__img {
-  width: 100%;
-  display: block;
 }
 
 /* Testimony */
@@ -847,17 +812,17 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.contact-form button {
+/*.contact-form button {
   width: 100%;
   padding: 10px;
-  background-color: #25aa00;
+  background-color: #aa3000;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 10px;
-}
+} eliminar codigo verificar si tiene alguna funcion*/
 
 .contact-form button:hover {
   background-color: #35d608;
@@ -1029,10 +994,6 @@ html {
   text-align: left;
 }
 
-.about__picture {
-  max-width: 80%;
-}
-
 /*.about__paragraph{
   margin-bottom: 20px;
   line-height: 1.5;
@@ -1195,6 +1156,11 @@ html {
 
 .info_softG {
   background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+    radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  overflow: hidden;
 }
 
 .knowledge {
@@ -1207,14 +1173,36 @@ html {
 }
 
 .knowledge__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
-  align-items: center;
+  display: grid; /* Usamos Grid para dividir en columnas */
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  gap: 1em; /* Espacio entre las columnas */
+  align-items: center; /* Centra los elementos verticalmente */
 }
 
 .knowledge__picture {
-  max-width: 500px;
+  text-align: center;
+  text-align: left;
+  position: relative; /* Necesario para posicionar la imagen */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor durante la animación */
+  width: 100%;
+  display: block;
+  float: right; /* Mueve la imagen al lado derecho */
+}
+.knowledge__img {
+  display: flex; /* Usamos flex para la imagen si es necesario */
+  justify-content: flex-end; /* Alineamos la imagen a la derecha */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  opacity: 0; /* Inicialmente invisible */
+  transform: translateX(
+    -100%
+  ); /* Comienza fuera de la pantalla a la izquierda */
+  transition: all 1s ease-out; /* Transición para suavizar el movimiento */
+}
+
+/* Animación de deslizamiento */
+.knowledge__picture--visible .knowledge__img {
+  opacity: 1; /* Hace la imagen visible */
+  transform: translateX(0); /* Mueve la imagen a su posición original */
 }
 
 .knowledge__paragraph {
@@ -1230,11 +1218,6 @@ html {
   margin-left: auto; /* Centrar horizontalmente */
   margin-right: auto; /* Centrar horizontalmente */
   font-family: "Poppins", sans-serif;
-}
-
-.knowledge__img {
-  width: 100%;
-  display: block;
 }
 
 /* Testimony */
@@ -1657,6 +1640,25 @@ html {
 
 .nav__logo {
   margin-left: 20px;
+  opacity: 0; /* Empieza invisible */
+  transform: scale(0.8); /* Empieza más pequeño */
+  animation: fadeIn 2s ease-out 1s forwards; /* Retraso de 1 segundo */
+}
+
+/* Animación de desvanecimiento y escala */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Empieza invisible */
+    transform: scale(0.8); /* Empieza reducido */
+  }
+  50% {
+    opacity: 1; /* Se hace visible */
+    transform: scale(1.1); /* Se expande ligeramente */
+  }
+  100% {
+    opacity: 1; /* Termina visible */
+    transform: scale(1); /* Se ajusta al tamaño original */
+  }
 }
 
 .nav__items {
@@ -1783,10 +1785,6 @@ html {
     text-align: center;
   }
 
-  .about__picture {
-    max-width: 100%;
-  }
-
   .subtitle {
     color: var(--color-primary);
     font-size: 2.25rem;
@@ -1829,11 +1827,6 @@ html {
   }
 
   /*seccion TESTIMONIO*/
-
-  .knowledge__picture {
-    grid-row: 1/2;
-    justify-self: center;
-  }
 
   .testimony__container {
     grid-template-columns: 30px 1fr 30px;
