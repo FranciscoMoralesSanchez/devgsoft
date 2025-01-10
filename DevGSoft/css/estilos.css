@@ -211,21 +211,18 @@ html {
   position: relative; /* Necesario para posicionar la imagen */
   overflow: hidden; /* Asegura que la imagen no se salga del contenedor durante la animación */
 }
-
 .about__picture {
-  max-width: 80%;
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-  opacity: 0; /* Inicialmente invisible */
-  transform: translateX(
-    100%
-  ); /* Comienza fuera de la pantalla a la izquierda */
-  transition: all 1s ease-out; /* Transición para suavizar el movimiento */
+  max-width: 75%; /* Asegúrate de que la animación no se haga demasiado grande */
+  width: 75%; /* Ocupa todo el ancho del contenedor */
+  opacity: 0; /* Inicialmente invisible (si deseas animación de entrada) */
+  transform: translateX(100%); /* Empieza fuera de la pantalla */
+  transition: all 1s ease-out; /* Transición para el efecto de deslizamiento */
 }
 
 /* Animación de deslizamiento */
 .about__img--visible .about__picture {
-  opacity: 1; /* Hace la imagen visible */
-  transform: translateX(0); /* Mueve la imagen a su posición original */
+  opacity: 1; /* Hace la animación visible */
+  transform: translateX(0); /* Mueve la animación a su posición original */
 }
 
 /*.about__paragraph{
@@ -1933,6 +1930,10 @@ html {
   /* Opcional: cambia el color del menú hamburguesa cuando se activa */
   .menu-toggle.active .bar {
     background-color: #e74c3c; /* Cambia el color de las barras */
+  }
+
+  .about__img--left {
+    text-align: center;
   }
 
   .footer__paragraph {

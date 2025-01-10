@@ -10,7 +10,7 @@
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
  <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
 </head>
 
 <body>
@@ -73,9 +73,10 @@
  <main>
     <!-- ---------------------------- SECCION SOBRE NOSOSTROS!-->
     <section class="about container" id="nuestros_servicios">
- <figure class="about__img about__img--left">
-        <img src="recursos/imagesUno.jpg" class="about__picture">
-      </figure>
+        <figure class="about__img about__img--left">
+            <!-- Contenedor para la animación Lottie -->
+            <div id="lottie-animation" class="about__picture"></div>
+        </figure>
 
       <div class="about__texts" id="sobreMiTrabajo">
         <h2 class="subtitle">Sobre DevGsoft</h2>
@@ -433,7 +434,6 @@
                 <button type="button" id="closeForm">Cerrar</button>
             </form>
         </div>
-
    
         <script src="https://kit.fontawesome.com/7460d307cd.js" crossorigin="anonymous"></script>
         <script src="./js/slider.js"></script>
@@ -442,6 +442,7 @@
         <script src="./js/menu.js"></script>
         <script src="./js/animacionImage.js"></script>
         <script src="./js/animacionDosImage.js"></script>
+        <script src="./js/animacionSobreDevGsoft.js"></script>
     </body>
 
 </html
