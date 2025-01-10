@@ -391,6 +391,30 @@ html {
   flex-wrap: wrap; /* Asegura que las columnas se ajusten en pantallas más pequeñas */
 }
 
+/* Definimos la animación para los iconos de sobre mis servicios */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8); /* Comienza un poco más pequeño */
+    opacity: 0; /* Al principio no es visible */
+  }
+  100% {
+    transform: scale(1); /* Tamaño final */
+    opacity: 1; /* Se hace completamente visible */
+  }
+}
+
+/* Añadimos la animación a los iconos */
+.aboutt__icon {
+  opacity: 0; /* Inicialmente no visible */
+  transform: scale(0.8); /* Comienza pequeño */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Transición suave */
+}
+
+/* Cuando el icono tiene la clase visible (activada por JS) */
+.aboutt__icon.visible {
+  animation: scaleUp 1.5s ease-out forwards; /* Activar la animación */
+}
+
 .aboutt__icon {
   width: 60px; /* Ajusta el tamaño de los íconos según lo necesites */
   height: auto;
@@ -1805,6 +1829,20 @@ html {
     margin-right: auto;
   }
 
+  .about__picture {
+    max-width: 100%; /* Asegúrate de que la animación no se haga demasiado grande */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    opacity: 0; /* Inicialmente invisible (si deseas animación de entrada) */
+    transform: translateX(100%); /* Empieza fuera de la pantalla */
+    transition: all 1s ease-out; /* Transición para el efecto de deslizamiento */
+  }
+
+  /* Animación de deslizamiento */
+  .about__img--visible .about__picture {
+    opacity: 1; /* Hace la animación visible */
+    transform: translateX(0); /* Mueve la animación a su posición original */
+  }
+
   /*seccion CON SOFTG*/
 
   .knowledge__container {
@@ -1934,6 +1972,19 @@ html {
 
   .about__img--left {
     text-align: center;
+  }
+
+  .about__picture {
+    max-width: 100%; /* Asegúrate de que la animación no se haga demasiado grande */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    opacity: 0; /* Inicialmente invisible (si deseas animación de entrada) */
+    transform: translateX(100%); /* Empieza fuera de la pantalla */
+    transition: all 1s ease-out; /* Transición para el efecto de deslizamiento */
+  }
+  /* Animación de deslizamiento */
+  .about__img--visible .about__picture {
+    opacity: 1; /* Hace la animación visible */
+    transform: translateX(0); /* Mueve la animación a su posición original */
   }
 
   .footer__paragraph {
