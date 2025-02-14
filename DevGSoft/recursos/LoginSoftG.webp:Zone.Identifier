@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/02c5dade-6350-4c94-a58f-a8651b04a50a/LoginSoftG.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250214%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250214T190323Z&X-Amz-Expires=86400&X-Amz-Signature=e98a48c51a759d9708e9093415aaa7d9e5a20ec91b7748ca111f21c982c3b210&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22LoginSoftG.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

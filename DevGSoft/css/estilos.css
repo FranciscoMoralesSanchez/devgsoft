@@ -11,7 +11,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background: var(--background), url("../recursos/fondoPrincipal.png");
+  background: var(--background), url("../recursos/fondoPrincipal.webp");
   background-repeat: no-repeat;
   background-size: inherit;
   background-attachment: fixed;
@@ -136,10 +136,6 @@ html {
   margin-bottom: 50px;
 }
 
-.hero__title {
-  font-size: 3.2rem;
-}
-
 .hero__subtitle {
   font-size: 1.1rem; /* Tamaño de la fuente */
   font-weight: 300; /* Grosor de la fuente */
@@ -173,9 +169,6 @@ html {
   width: 100%;
   height: 100px;
 }
-
-/* about */
-
 .presentacion {
   padding-top: 0;
   text-align: center;
@@ -189,12 +182,6 @@ html {
   object-fit: cover;
   object-position: top;
 }
-
-/*.presentacion__copy{
-  width: 70%;
-  margin: 0 auto;
-}
-*/
 
 .about {
   min-height: 400px;
@@ -303,8 +290,6 @@ html {
   margin-top: 10px;
   font-size: 30px;
 }
-
-/*----------------------------------- Footer ------------------------------*/
 
 .footer {
   background-color: #342d87;
@@ -642,8 +627,6 @@ html {
   color: #fff;
 }
 
-/* ------------------------------------------ Estilos para el contenedor del icono de WhatsApp */
-
 #whatsapp-icon {
   position: fixed;
   bottom: 20px;
@@ -721,7 +704,6 @@ html {
   }
 }
 
-/*----------- icons de contacto dentro del footer parte inferior ------------ */
 .footer__contact-icons {
   margin-top: 22px;
   display: flex;
@@ -729,7 +711,6 @@ html {
   justify-content: left;
   font-family: "Poppins", sans-serif;
 }
-
 .footer__icon-link {
   color: #ffffff; /* Color de los íconos */
   text-decoration: none;
@@ -738,7 +719,6 @@ html {
   align-items: center;
   gap: 8px;
 }
-
 .footer__icon-link i {
   font-size: 20px; /* Tamaño de los íconos */
 }
@@ -746,8 +726,6 @@ html {
 .footer__icon-link:hover {
   color: #007bff; /* Color al pasar el mouse */
 }
-
-/*-----------------------------------------------------------------------------------------------------------Media queries------------------*/
 
 .subtitle__testimony {
   color: var(--color-primary);
@@ -815,10 +793,6 @@ html {
   margin-bottom: 50px;
 }
 
-.hero__title {
-  font-size: 3.2rem;
-}
-
 .hero__subtitle {
   font-size: 1.1rem; /* Tamaño de la fuente */
   font-weight: 300; /* Grosor de la fuente */
@@ -853,8 +827,6 @@ html {
   height: 100px;
 }
 
-/* about */
-
 .presentacion {
   padding-top: 0;
   text-align: center;
@@ -868,12 +840,6 @@ html {
   object-fit: cover;
   object-position: top;
 }
-
-/*.presentacion__copy{
-  width: 70%;
-  margin: 0 auto;
-}
-*/
 
 .presentacion_cta_button {
   display: inline-block;
@@ -936,8 +902,6 @@ html {
   font-size: 30px;
 }
 
-/*----------------------------------- Footer ------------------------------*/
-
 .footer {
   background-color: #342d87;
 }
@@ -962,8 +926,6 @@ html {
   margin-left: auto; /* Centrar horizontalmente */
   margin-right: auto;
 }
-
-/* ---------- footer__copy container ----------*/
 
 .footer__copy {
   --padding-container: 80px 0;
@@ -1313,7 +1275,6 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-/* ----------------------------------------------------------------------------Estilo para el botón */
 .contact-button {
   position: fixed;
   bottom: 20px;
@@ -1425,9 +1386,6 @@ html {
   background-color: #ff4000;
 }
 /*-------fin formulario*/
-
-/*-----------------------------------------------------------------------------------------------------------Media queries------------------*/
-
 /* Estilo general */
 .nav {
   display: flex;
