@@ -1,9 +1,8 @@
-/*@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Inter:wght@300;500&family=Raleway:wght@300;400;700&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 :root {
   --background: linear-gradient(150deg, #0004d6a1 20%, #ffffff7e 100%);
-  --color-primary: #0107fa; /*color de las letras o encabezados*/
+  --color-primary: #0107fa;
   --color-secondary: #010370;
   --boton-padding: 15px 25px;
 }
@@ -32,15 +31,15 @@ html {
 }
 
 #sobreMi {
-  scroll-margin-top: -510px; /*barra de navehgacion sobre DevGsoft*/
+  scroll-margin-top: -510px;
 }
 
 #productos {
-  scroll-margin-top: 300px; /*hace scroll asta productos*/
+  scroll-margin-top: 300px;
 }
 
 #nuestros_servicios {
-  scroll-margin-top: -550px; /*barra de navegacion sobre servicios*/
+  scroll-margin-top: -550px;
 }
 
 #sobre_softG {
@@ -1453,6 +1452,9 @@ html {
   display: flex;
 }
 
+@media (max-width: 480px) {
+}
+
 @media (max-width: 800px) {
   /* Ocultar los enlaces del menú en pantallas pequeñas */
 
@@ -1514,17 +1516,28 @@ html {
   }
 
   .hero__title {
-    font-size: 3rem; /* Tamaño grande para el título */
+    font-size: 2rem; /* Tamaño grande para el título */
     margin-bottom: 30px; /* Espacio debajo del título */
-    margin-top: -90px;
+    margin-top: -118px;
   }
 
   .hero__subtitle {
-    font-size: 1.25rem; /* Tamaño adecuado para el subtítulo */
-    margin-bottom: 20px; /* Espacio debajo del subtítulo */
     text-align: center;
     line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
   }
+
+  .presentacion_cta_button {
+    display: inline-block;
+    margin-top: 3px;
+    background: #27b600;
+    color: #fff; /*color del las letras del boton*/
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); /* Desplazamiento, difuminado, color */
+  }
+
   .contact-form {
     background-color: #ffffffe1; /*le agrega color al formulario*/
     padding: 30px;
@@ -1653,8 +1666,6 @@ html {
     text-align: justify; /* Alineación del texto, puedes cambiarlo a 'center' si lo prefieres centrado */
   }
 
-  /*VERIFICAR QUE ESTE CODIGO ELIMINE EL RECUADRO AZUL CAUNDO ESTA EN UNA TABLE LA PAGINA*/
-  /* Aplica este estilo solo en dispositivos móviles */
   @media (max-width: 768px) {
     button:focus,
     a:focus,
