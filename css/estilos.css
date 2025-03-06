@@ -818,14 +818,6 @@ html {
   border-radius: 40px;
 }
 
-.hero__wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-}
-
 .presentacion {
   padding-top: 0;
   text-align: center;
@@ -1511,7 +1503,6 @@ html {
 
   .hero_texts {
     max-width: 800px; /* Limita el ancho para no hacer el texto demasiado amplio */
-    padding: 20px; /* Espaciado interior */
     margin-top: -60px;
   }
 
@@ -1519,25 +1510,17 @@ html {
     font-size: 2rem; /* Tamaño grande para el título */
     margin-bottom: 30px; /* Espacio debajo del título */
     margin-top: -118px;
+    text-align: left;
   }
 
   .hero__subtitle {
-    text-align: center;
+    text-align: left;
     line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
   }
 
   .presentacion_cta_button {
-    display: inline-block;
     margin-top: 3px;
-    background: #27b600;
-    color: #fff; /*color del las letras del boton*/
-    text-decoration: none;
-    padding: var(--boton-padding);
-    border-radius: 40px;
-    font-family: "Poppins", sans-serif;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); /* Desplazamiento, difuminado, color */
   }
-
   .contact-form {
     background-color: #ffffffe1; /*le agrega color al formulario*/
     padding: 30px;
