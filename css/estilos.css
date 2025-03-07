@@ -81,7 +81,6 @@ html {
 }
 
 .about__paragraph {
-  /*cambia el color de letra los parrafos de la seccion "sobre devgsoft y productos"*/
   color: #010370;
   font-family: "Poppins", sans-serif;
   font-size: 16px; /* Tamaño de la fuente */
@@ -172,7 +171,7 @@ html {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 120px;
+  height: 70px;
 }
 .presentacion {
   padding-top: 0;
@@ -217,18 +216,11 @@ html {
   transform: translateX(0); /* Mueve la animación a su posición original */
 }
 
-/*.about__paragraph{
-  margin-bottom: 20px;
-  line-height: 1.5;
-  font-weight: 300;
-}*/
-
 /* projects */
 
 .projects {
   background: #d6d7ff;
 }
-
 .projects__grid {
   display: grid;
   height: 550px;
@@ -1526,6 +1518,14 @@ html {
 
   .presentacion_cta_button {
     margin-top: 3px;
+  }
+
+  .hero__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
   }
   .contact-form {
     background-color: #ffffffe1; /*le agrega color al formulario*/
