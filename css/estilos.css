@@ -841,6 +841,17 @@ html {
   font-family: "Poppins", sans-serif;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); /* Desplazamiento, difuminado, color */
 }
+.presentacion_cta_button_header {
+  display: inline-block;
+  margin-top: 30px;
+  background: #27b600;
+  color: #fff; /*color del las letras del boton*/
+  text-decoration: none;
+  padding: var(--boton-padding);
+  border-radius: 40px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); /* Desplazamiento, difuminado, color */
+}
 .about {
   min-height: 400px;
   display: grid;
@@ -1010,26 +1021,6 @@ html {
   margin: 10px 0;
   max-width: 260px; /* Asegura que los párrafos no se estiren demasiado */
   font-family: "Poppins", sans-serif;
-}
-
-/*estilos para seccion info de SOFTG*/
-
-.info_softG {
-  background-color: #e1e1ff; /*le da color a la seccion de testimonio*/
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
-    radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
-  overflow: hidden;
-}
-
-.knowledge {
-  background-color: #ffffff;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
-    radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
-  overflow: hidden;
 }
 
 .knowledge__container {
@@ -1516,8 +1507,15 @@ html {
     line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
   }
 
+  .presentacion_cta_button_header {
+    margin-top: 3px;
+    float: left;
+    margin-top: 15px;
+  }
   .presentacion_cta_button {
     margin-top: 3px;
+    float: center;
+    margin-top: 15px;
   }
 
   .hero__wave {
